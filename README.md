@@ -1,5 +1,7 @@
 # TOEIC 850点・大学編入 学習管理
 
+公開アプリ: https://tamaki73.github.io/toeic-transfer-study/
+
 既存の学習チェックリスト・週別計画・模試記録・単語帳・フラッシュカードを引き継ぐ静的Webアプリです。TOEIC現在735点（L390/R345）から850点以上、2026年12月6日受験を前提とした計画を保持しています。クラウド同期や認証は導入していません。
 
 ## 起動
@@ -87,13 +89,17 @@ cd /workspace/toeic-transfer-study
 node --test tests/storage.test.cjs
 # 上記HTTPサーバーを起動した状態。テストにはPython PlaywrightとChromiumが必要。
 python tests/browser.py
+# 公開済みGitHub Pagesに対する同じ操作検証
+STUDY_TEST_URL=https://tamaki73.github.io/toeic-transfer-study/ python tests/browser.py
+# 外部サービスへ1回実通信する、明示実行用の検証（通信制限・利用上限に依存）
+python tests/live_translation.py
 ```
 
 ブラウザテストは一時的な独立プロファイルを使い、個人の学習記録には接触しません。外部APIの成功・失敗・利用制限・入力競合は模擬応答を使います。実通信と区別した結果は `TEST_RESULTS.md` を参照してください。
 
 ## GitHub Pages
 
-フェーズ3の実施はユーザー承認済みです。既存の `tamaki73/toeic-transfer-study` のmainを公開対象にし、`188cm-run` は操作しません。最新の公開状況・残る作業は `DEPLOYMENT.md` を参照してください。
+フェーズ3の実施はユーザー承認済みです。既存の `tamaki73/toeic-transfer-study` のmainを公開対象にし、`188cm-run` は操作しません。GitHub APIで `built`、配信元 `main` / ルートを確認済みです。公開URLでの操作検証も完了しました。詳細は `DEPLOYMENT.md` を参照してください。
 
 Pagesの設定は「Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch: main → /(root) → Save」です。公開先を別アプリからコピーせず、GitHubが表示するURLで確認してください。アプリ資産は相対パスで、`/toeic-transfer-study/` 配信に対応します。`.nojekyll` によりビルド不要の静的ファイルとして配信します。
 

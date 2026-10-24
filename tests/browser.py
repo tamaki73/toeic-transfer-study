@@ -1,14 +1,18 @@
 """Isolated Chromium tests. All seeded records are synthetic; no user browser is accessed."""
-import json, tempfile
+import json, tempfile, os
+from urllib.parse import urlsplit
 from pathlib import Path
 from playwright.sync_api import sync_playwright, expect
-URL='http://127.0.0.1:8000/toeic-transfer-study/'
+URL=os.environ.get('STUDY_TEST_URL','http://127.0.0.1:8000/toeic-transfer-study/')
 STUDY='kosen-transfer-study-2028-v1'; VOCAB='kosen-toeic-vocabulary-2028-v1'
 passed=[]
 def ok(name): passed.append(name);print('PASS',name,flush=True)
 def data(page):return page.evaluate('({progress:JSON.parse(localStorage.getItem(StudyStorage.STUDY)),cards:JSON.parse(localStorage.getItem(StudyStorage.VOCAB))})')
 with sync_playwright() as p:
- browser=p.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
+ launch={'executable_path':'/usr/bin/chromium','headless':True,'args':['--no-sandbox']}
+ if urlsplit(URL).hostname not in ['localhost','127.0.0.1'] and os.environ.get('HTTPS_PROXY'):
+  launch['proxy']={'server':os.environ['HTTPS_PROXY']}
+ browser=p.chromium.launch(**launch)
  context=browser.new_context(accept_downloads=True,viewport={'width':1366,'height':900})
  page=context.new_page(); errors=[]; page.on('pageerror',lambda e:errors.append(str(e)))
  page.goto(URL);expect(page.locator('#vocabAddBtn')).to_be_disabled();assert not errors,errors
