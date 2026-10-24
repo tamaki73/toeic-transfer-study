@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>高専編入＋TOEIC850点｜学習計画・チェックリスト</title>
+<link rel="stylesheet" href="./css/style.css"></head><body><div class="wrap"><div class="eyebrow">KOSEN TRANSFER EXAM · 2028</div>
+<h1>TOEIC 850点＋大学編入 学習チェックリスト＆単語カード</h1><p class="lead">Listening 390点＋Reading 345点＝735点 → <b>850点以上</b>｜2026年12月6日(日) 本番｜数学・物理も継続。週別プラン・単元別チェックに加えて、単語帳とフラッシュカードで英語も復習できます。チェックはブラウザ内に保存します。</p>
+<div id="storageWarning" class="callout hidden" role="alert"></div>
+<div class="dashboard"><div class="stat bigstat"><div class="name">総合進捗</div><div class="num" id="totalStat">0 / 0</div><div class="progress"><div class="fill" id="totalBar"></div></div></div><div class="stat"><div class="name">数学</div><div class="num" id="mstat">0 / 0</div></div><div class="stat"><div class="name">物理</div><div class="num" id="pstat">0 / 0</div></div><div class="stat"><div class="name">電気回路</div><div class="num" id="estat">0 / 0</div></div><div class="stat"><div class="name">TOEIC</div><div class="num" id="tstat">0 / 0</div></div></div>
+<div class="callout schedule"><h2>TOEIC850点チャレンジ｜12/6までの6週間</h2>
+<p><strong>週15時間の目安：TOEIC 10時間 ＋ 数学 3時間 ＋ 物理 2時間</strong>。現状Listening 390点＋Reading 345点から、最低850点（＋115点）、練習目標860点（＋125点）を目指す挑戦的な計画です。850点を保証するものではありません。学校の課題・休息も優先し、確保できる時間の中で弱点を集中的に学びます。</p>
+<div class="split"><div><b>平日</b><small>TOEIC75分（単語10分・聞き取り25分・文法/読解40分）×5日＝6時間15分</small></div><div><b>土曜日</b><small>TOEIC2時間30分：模試またはPart 7＋Part 3・4演習。模試週は時間配分を入れ替える</small></div><div><b>日曜日</b><small>TOEIC75分：弱点の復習。数学3時間・物理2時間は週全体で分散</small></div></div>
+<p><strong>現在 Listening 390＋Reading 345＝735点。最低ライン Listening 450＋Reading 400＝850点、上積み目標 Listening 460＋Reading 400＝860点</strong>。TOEICはListening約45分・Reading75分で各100問です。模試での正答数がそのまま得点になるわけではないので、正答率・時間不足を追跡してください。</p>
+<p><strong>配分：Reading 5時間（Part 6の文脈・Part 7の速度を重点）、Listening 4時間（Part 3・4の再聴と設問先読み）、単語 1時間／週。</strong> 語彙は問題演習で間違えた単語を優先します。</p>
+<p><strong>Reading目安：</strong>Part 5=10分、Part 6=10分、Part 7=55分。苦手なPart 6の接続詞・接続副詞は毎週演習し、文の構造と意味を両方確認します。</p>
+<h2 style="margin-top:16px">TOEIC後｜12/7から</h2><p><strong>数学 5時間 ＋ 物理 5時間／週</strong>に切り替えて大学編入対策を優先。英語は必要なら維持学習。下の「週別計画」で週ごとにチェックを付けられます。</p>
+<p><strong>受験申込：</strong>12月6日のTOEICは申し込み済み。試験前日は会場・入室時間・持ち物を確認しましょう。</p></div>
+<div class="callout" id="scorecard"><h2>模試のスコア記録（任意）</h2><p>模試教材に換算スコアが載っている場合のみL/R得点を入力できます。正答数をそのまま入力しないでください。空欄のままで問題ありません。推定点は本番の保証ではありません。</p><div class="scoregrid"><div><strong>模試①｜10/24〜30</strong><label>Listening <input id="s1L" type="number" min="5" max="495" step="5" inputmode="numeric" placeholder="例：410"></label><label>Reading <input id="s1R" type="number" min="5" max="495" step="5" inputmode="numeric" placeholder="例：350"></label><div class="scoretotal" id="sum1">計：—</div></div><div><strong>模試②｜11/14〜20</strong><label>Listening <input id="s2L" type="number" min="5" max="495" step="5" inputmode="numeric" placeholder="L"></label><label>Reading <input id="s2R" type="number" min="5" max="495" step="5" inputmode="numeric" placeholder="R"></label><div class="scoretotal" id="sum2">計：—</div></div><div><strong>模試③｜11/28〜12/4</strong><label>Listening <input id="s3L" type="number" min="5" max="495" step="5" inputmode="numeric" placeholder="L"></label><label>Reading <input id="s3R" type="number" min="5" max="495" step="5" inputmode="numeric" placeholder="R"></label><div class="scoretotal" id="sum3">計：—</div></div></div></div>
+
+<section class="vocab-panel" id="vocabPanel" aria-label="TOEIC単語帳とフラッシュカード">
+  <div class="vocab-header">
+    <div><div class="vocab-kicker">VOCAB STUDIO · TOEIC 850+</div><h2>単語を入れるだけ。自分専用フラッシュカード</h2><p>英単語を入力すると日本語訳が表示されます。意味を確認・編集し、追加ボタンを押してから保存されます。</p></div>
+    <span class="vocab-count" id="vocabCount">0語登録</span>
+  </div>
+  <div class="vocab-add">
+    <form id="vocabForm" autocomplete="off">
+      <label class="vocab-field vocab-english">① 英単語・英語フレーズ<input id="vocabEnglish" type="text" maxlength="120" spellcheck="false" placeholder="例：procurement" autocomplete="off" required></label>
+      <button type="submit" class="vocab-plain vocab-relookup" id="vocabLookupBtn">↻ 意味を検索</button>
+      <label class="vocab-field vocab-japanese">② 日本語訳（確認・編集できます）<input id="vocabJapanese" type="text" maxlength="180" placeholder="自動翻訳の結果が入ります。自由に修正できます"></label>
+    </form>
+    <div class="vocab-draft" id="vocabDraft" aria-label="単語の登録前プレビュー" aria-live="polite">
+      <span class="vocab-draft-kicker">登録前のプレビュー · まだ保存されていません</span>
+      <div class="vocab-draft-words"><strong id="vocabDraftEn">英単語を入力してください</strong><span aria-hidden="true">→</span><span id="vocabDraftJa">日本語訳を確認してから追加できます</span></div>
+      <p class="vocab-draft-caption">③ 日本語訳を確認し、必要なら上の欄で修正してから追加してください。</p>
+      <button type="button" class="vocab-primary" id="vocabAddBtn" disabled>＋ この内容で単語帳に追加</button>
+    </div>
+    <p class="vocab-info" id="vocabStatus" aria-live="polite">英単語を入力すると意味を調べます。Enterキーでは登録されません。内容を確認して追加ボタンを押してください。</p>
+    <p class="vocab-privacy">※ まず内蔵のTOEIC辞書を参照し、見つからなければ公開英和辞書 EJDict（約4.7万項目、CC0）を検索します。辞書はこのアプリに同梱し、最初の検索時に読み込んで端末内にキャッシュします。辞書にない表現だけ外部翻訳（MyMemory）を試します。単語以外の個人情報は入力しないでください。誤訳や複数の意味は登録前に編集してください。 <a id="externalTranslation" href="https://translate.google.com/" target="_blank" rel="noopener noreferrer" style="color:#a8d8ff">Google翻訳で意味を確認</a></p>
+  </div>
+  <div class="vocab-grid">
+    <div class="vocab-study">
+      <div class="vocab-topline"><h3>フラッシュカード</h3><span id="reviewStats">今日の復習 0語</span></div>
+      <div class="vocab-mode" role="group" aria-label="表示するカード">
+        <button type="button" class="vocab-chip selected" data-review="due">今日の復習</button>
+        <button type="button" class="vocab-chip" data-review="all">全カード</button>
+        <button type="button" class="vocab-chip" data-review="missed">苦手な単語</button>
+      </div>
+      <button type="button" class="flashcard" id="flashcard" aria-label="カードをめくる">
+        <span class="flashcard-label" id="flashcardSide">ENGLISH · タップで裏返す</span>
+        <span class="flashcard-main" id="flashcardText">単語を追加すると、ここにカードが表示されます</span>
+        <span class="flashcard-bottom" id="flashcardHint">英単語 → 日本語訳</span>
+      </button>
+      <div class="vocab-nav"><button type="button" class="vocab-plain" id="vocabPrev">← 前へ</button><span id="vocabPosition">0 / 0</span><button type="button" class="vocab-plain" id="vocabNext">次へ →</button></div>
+      <div class="vocab-answers"><button type="button" class="vocab-again" id="vocabAgain">もう一度</button><button type="button" class="vocab-know" id="vocabKnow">覚えた ✓</button></div>
+      <div class="vocab-extras"><button type="button" class="vocab-plain" id="vocabSpeak">🔊 発音する</button><button type="button" class="vocab-plain" id="vocabShuffle">⇄ シャッフル</button></div>
+      <p class="vocab-subtle">「覚えた」は1→3→7→14→30日後を目安に復習。「もう一度」は約10分後に再出題します。「全カード」ではいつでも練習できます。</p>
+    </div>
+    <div class="vocab-listpanel">
+      <div class="vocab-topline"><h3>登録した単語</h3><span id="vocabTotalWords">0語</span></div>
+      <input type="search" id="vocabSearch" class="vocab-search" placeholder="英語・日本語で検索" aria-label="単語帳を検索">
+      <div class="vocab-list" id="vocabList"></div>
+      <p class="vocab-subtle">登録前にも訳を編集できます。登録後の編集・削除にも対応しています。学習進捗と単語帳はこの端末・ブラウザ内に保存され、端末間では自動同期されません。</p>
+      <div class="vocab-tools"><button type="button" class="vocab-plain" id="vocabCsv">単語帳をCSVで保存</button><button type="button" class="vocab-plain" id="vocabExport">単語帳をJSONで保存</button><button type="button" class="vocab-plain" id="vocabImportBtn">単語帳を読み込む</button><input type="file" id="vocabImportFile" accept=".json,application/json" hidden></div>
+    </div>
+  </div>
+</section>
+
+<div class="toolbar"><div class="seg" id="tabBtns"><button class="btn" data-tab="all">すべて</button><button class="btn" data-tab="数学">数学</button><button class="btn" data-tab="物理">物理</button><button class="btn" data-tab="電気回路">電気回路</button><button class="btn" data-tab="TOEIC">TOEIC</button><button class="btn active" data-tab="weeks">週別計画（850点）</button></div><input class="search" id="search" type="search" placeholder="単元・キーワードで検索" aria-label="単元を検索"><div class="right"><button class="btn" id="priorityBtn">最優先のみ</button><button class="btn" id="openBtn">すべて開く</button></div></div>
+<p class="note"><span id="savedAt">進捗は自動保存されます。</span> ブラウザのデータ削除・別端末への移動に備えて、定期的に「バックアップ」を保存してください。</p><div id="sections"></div>
+<div class="callout"><h2>スマホで使う場合の注意</h2><p>GitHub Pagesなどで公開すればスマホからURLで開けます。ただしチェック履歴・単語帳は端末ごとに保存され、自動同期はしません。PCからスマホへ移す場合は、「進捗をバックアップ」でJSONを保存し、スマホで「バックアップを読み込む」を使ってください。公開リポジトリに個人データ入りのバックアップを置かないでください。</p></div>
+<div class="callout"><h2>進捗の保存・引き継ぎ</h2><p>チェックするたびにこのブラウザ内へ自動保存します。同じファイルを同じブラウザで開くと復元されます。端末や公開URLを替える場合は、元のブラウザでJSONを出力してから、新しい画面で読み込んでください。PCとスマートフォンは自動同期されません。読み込みは原則統合し、競合する記録は現在の内容を優先します。</p><div class="seg" style="margin-top:12px"><button class="btn" id="exportBtn">進捗＋単語帳をバックアップ（JSON）</button><button class="btn" id="importBtn">バックアップを読み込む</button><button class="btn" id="rawExportBtn">保存領域をそのまま救出（JSON）</button><button class="btn" id="resetBtn">チェックだけを初期化</button><input id="importFile" type="file" accept="application/json,.json" style="display:none"></div></div>
+<p class="foot">注意：進捗はChatGPTの会話とは同期しません。端末間で同期したい場合は、別添Excel版をGoogleドライブやOneDriveに保存して利用してください。学習分野は志望校の公表範囲に基づく対策候補です。850点到達を保証するものではありません。練習目標は860点（L460・R400）です。12/6まではTOEICを重点対策し、12/7以降は数学・物理を優先します。</p></div><div class="toast" id="toast" role="status"></div>
+<script defer src="./js/data.js"></script>
+<script defer src="./js/storage.js"></script>
+<script defer src="./js/translation.js"></script>
+<script defer src="./js/app.js"></script>
+<script defer src="./js/vocabulary.js"></script>
+<script defer src="./js/backup.js"></script></body></html>

@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>高専編入＋TOEIC850点｜学習計画・チェックリスト</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#141d2f;--card:#18243a;--stroke:#2b3950;--muted:#9cacbf;--text:#eaf2ff;--blue:#6aa9ff;--teal:#55dbc0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 6% -8%,#18385d 0%,transparent 32%),radial-gradient(circle at 100% 10%,#103c3c 0%,transparent 33%),var(--bg);font-family:system-ui,-apple-system,"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;color:var(--text);line-height:1.6}
+.wrap{max-width:1000px;margin:0 auto;padding:32px 18px 72px}.eyebrow{letter-spacing:.15em;font-size:11px;color:var(--teal);font-weight:700}h1{font-size:clamp(23px,4vw,35px);line-height:1.35;margin:9px 0}.lead{color:var(--muted);margin:0 0 22px;font-size:14px}
+.dashboard{display:grid;grid-template-columns:1.3fr repeat(4,1fr);gap:10px}.stat,.section,.toolbar,.callout{border:1px solid var(--stroke);border-radius:16px;background:rgba(20,29,47,.94)}.stat{padding:16px}.stat .name{color:var(--muted);font-size:12px}.stat .num{font-size:24px;font-weight:750;line-height:1.6}.bigstat{background:linear-gradient(130deg,#192c48,#153c43)}.progress{background:#303d53;border-radius:100px;height:8px;overflow:hidden;margin-top:9px}.fill{background:linear-gradient(90deg,var(--blue),var(--teal));height:100%;width:0;transition:width .2s}
+.toolbar{margin-top:17px;padding:16px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}.seg{display:flex;flex-wrap:wrap;gap:6px}.btn{font:inherit;font-size:13px;cursor:pointer;border:1px solid #384a64;background:#1d2b40;color:var(--text);border-radius:10px;padding:9px 13px}.btn:hover{border-color:#76baff}.btn.active{border-color:#72b6ed;color:#0b1220;background:#96c9ff;font-weight:700}.search{border:1px solid #384a64;background:#0c1729;color:var(--text);border-radius:10px;padding:10px 12px;font:inherit;font-size:14px;flex:1;min-width:160px}.right{margin-left:auto;display:flex;gap:7px;flex-wrap:wrap}
+.note{font-size:12px;color:var(--muted);margin:14px 2px}.section{margin:14px 0;overflow:hidden}.section>button{width:100%;text-align:left;background:transparent;border:0;display:flex;align-items:center;justify-content:space-between;color:var(--text);cursor:pointer;gap:10px;padding:15px 18px}.section>button:hover{background:#ffffff08}.section-title{font-size:16px;font-weight:750}.pill{font-size:11px;color:#a9d3ff;background:#1e3856;padding:4px 9px;border-radius:40px}.meta{display:flex;gap:7px;align-items:center;flex-wrap:wrap}.count{color:var(--muted);font-size:12px;white-space:nowrap}.items{border-top:1px solid var(--stroke);padding:7px 12px 12px}.item{display:flex;align-items:flex-start;gap:13px;padding:10px 12px;border-radius:10px;cursor:pointer;color:#e7edf7;font-size:14px}.item:hover{background:#ffffff0b}.item input{appearance:none;flex:none;width:20px;height:20px;border:2px solid #66839d;border-radius:6px;margin:2px 0 0;background:#0d1c30;cursor:pointer;position:relative}.item input:checked{background:#47ceb5;border-color:#47ceb5}.item input:checked:after{content:'✓';position:absolute;inset:-5px 0 0 2px;color:#062b2b;font-weight:850;font-size:18px}.item.done span{text-decoration:line-through;color:#8192a7}.minibar{width:96px;height:5px;background:#2b3950;border-radius:10px;overflow:hidden}.minibar div{height:100%;background:var(--teal)}
+.callout{padding:16px;margin-top:22px}.callout h2{margin:0 0 6px;font-size:15px}.callout p{margin:6px 0;font-size:13px;color:var(--muted)}.schedule{margin-top:14px;margin-bottom:4px;background:linear-gradient(125deg,#172946,#193834)}.schedule strong{color:#eaf7ff}.split{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:13px}.split>div{border:1px solid #456078;border-radius:12px;padding:10px;background:#0e2434}.split b{display:block;font-size:13px}.split small{display:block;color:#bfd3dd;font-size:12px;margin-top:3px}@media(max-width:650px){.split{grid-template-columns:1fr}}.foot{margin-top:17px;font-size:12px;color:var(--muted)}.hidden{display:none!important}.empty{color:var(--muted);text-align:center;padding:50px}.toast{position:fixed;bottom:18px;right:18px;background:#24554f;border:1px solid #5dc4b0;border-radius:10px;padding:10px 15px;color:#f4fffd;box-shadow:0 10px 35px #0006;font-size:13px;display:none;max-width:90vw}
+@media(max-width:700px){.dashboard{grid-template-columns:repeat(2,1fr)}.right{margin-left:0}.wrap{padding-top:24px}.section>button{align-items:flex-start}.minibar{display:none}.stat .num{font-size:20px}}
+.scoregrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}.scoregrid>div{border:1px solid var(--stroke);border-radius:12px;padding:12px;background:#132034}.scoregrid label{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;margin-top:10px}.scoregrid input{width:88px;border:1px solid #384a64;background:#091a31;color:#eaf2ff;border-radius:8px;padding:7px;font:inherit}.scoretotal{font-weight:700;margin-top:10px;color:#84e4ce}@media(max-width:700px){.scoregrid{grid-template-columns:1fr}}
+
+/* Vocabulary flashcards extension */
+.vocab-panel{margin-top:23px;border:1px solid #335079;border-radius:18px;overflow:hidden;background:linear-gradient(125deg,#152945,#111d31);box-shadow:0 12px 38px #0002}
+.vocab-header{padding:22px 22px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.vocab-kicker{font-size:11px;font-weight:800;letter-spacing:.16em;color:#83c5ff}
+.vocab-header h2{font-size:21px;margin:6px 0}.vocab-header p{margin:0;color:#adc1d9;font-size:13px}
+.vocab-count{background:#1c4052;color:#8eeacf;font-weight:800;border-radius:999px;padding:7px 12px;white-space:nowrap;font-size:13px}
+.vocab-add{margin:0 20px 20px;padding:16px;border:1px solid #37516e;border-radius:13px;background:#0b1c2f}
+#vocabForm{display:flex;gap:10px;align-items:end;flex-wrap:wrap}.vocab-field{font-size:12px;color:#afc1d9;display:flex;flex-direction:column;gap:7px;flex:1;min-width:160px}.vocab-english{flex:1.1}.vocab-japanese{flex:1.1}
+.vocab-field input,.vocab-search{width:100%;border:1px solid #476080;background:#0c1729;border-radius:9px;color:#f3f7ff;padding:11px;font:inherit;outline:none}.vocab-field input:focus,.vocab-search:focus{border-color:#83beff;box-shadow:0 0 0 3px #4c95ed33}
+.vocab-primary{background:linear-gradient(125deg,#62aeff,#4885e2);color:#06162b;font-weight:850;border:0;border-radius:10px;padding:12px 17px;cursor:pointer;min-height:44px}.vocab-primary:disabled{opacity:.55;cursor:progress}
+.vocab-info{color:#97e2ce;font-size:13px;min-height:20px;margin:11px 0 5px}.vocab-info.error{color:#ffb5a8}.vocab-privacy{font-size:11px;color:#9eb0c6;line-height:1.7;margin:0}
+.vocab-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:15px;padding:0 20px 20px}.vocab-study,.vocab-listpanel{background:#112038;border:1px solid #344662;border-radius:14px;padding:17px;min-width:0}
+.vocab-topline{display:flex;justify-content:space-between;gap:6px;align-items:center;margin-bottom:13px}.vocab-topline h3{margin:0;font-size:16px}.vocab-topline span{font-size:12px;color:#9eb6d1}.vocab-mode{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.vocab-chip{border:1px solid #38516e;background:#142b48;color:#b7c9de;font-size:12px;padding:7px 9px;border-radius:18px;cursor:pointer}.vocab-chip.selected{background:#1d5774;border-color:#6bd1e5;color:white;font-weight:800}
+.flashcard{width:100%;min-height:220px;background:linear-gradient(145deg,#173a62,#18334f 55%,#143e46);color:#f2f8ff;border:1px solid #5a9ac2;border-radius:17px;display:flex;flex-direction:column;justify-content:space-between;align-items:center;cursor:pointer;text-align:center;padding:22px 13px;box-shadow:inset 0 1px #ffffff1a,0 10px 28px #0003;overflow-wrap:anywhere}
+.flashcard:focus-visible,.vocab-plain:focus-visible,.vocab-chip:focus-visible{outline:3px solid #76bafa;outline-offset:2px}
+.flashcard.flipped{background:linear-gradient(145deg,#184a42,#194345,#1d3353);border-color:#69c4ba}
+.flashcard-label{font-size:11px;letter-spacing:.14em;color:#b2d7ed}.flashcard-main{font-size:clamp(23px,3.5vw,38px);line-height:1.4;font-weight:800;display:block;padding:14px 0;max-width:100%}.flashcard-bottom{font-size:12px;color:#bbd1e4}
+.vocab-nav,.vocab-answers,.vocab-extras{display:flex;justify-content:space-between;gap:9px;align-items:center;margin-top:12px}.vocab-nav span{font-size:13px;color:#aebed3}
+.vocab-plain{background:#1a2e4b;color:#d1e3f6;border:1px solid #405779;border-radius:9px;padding:8px 10px;cursor:pointer;font-size:12px}.vocab-plain:disabled,.vocab-again:disabled,.vocab-know:disabled{opacity:.35;cursor:default}.vocab-answers button{flex:1;border:0;border-radius:10px;padding:12px 8px;color:white;font-weight:800;cursor:pointer}.vocab-again{background:#8e4d44}.vocab-know{background:#1b826f}.vocab-extras{justify-content:center;flex-wrap:wrap}.vocab-subtle{font-size:11px;color:#99b0c6;line-height:1.7;margin:13px 0 0}
+.vocab-search{margin-bottom:12px}.vocab-list{max-height:380px;overflow-y:auto;display:flex;flex-direction:column;gap:7px;padding-right:2px}.vocab-word{display:flex;gap:8px;align-items:center;border:1px solid #30415b;background:#132b42;border-radius:9px;padding:9px 10px;min-width:0}.vocab-word-main{flex:1;min-width:0}.vocab-word-english{color:#f3f6ff;font-weight:750;overflow-wrap:anywhere}.vocab-word-jp{font-size:12px;color:#a7c7cf;margin-top:4px;overflow-wrap:anywhere}.vocab-word-sub{font-size:10px;color:#89a8c0;margin-top:4px}.vocab-word button{border:0;background:#223d5a;color:#c5daf0;cursor:pointer;font-size:12px;padding:6px;border-radius:6px;flex-shrink:0}.vocab-word button:hover{background:#36577a}.vocab-empty{color:#9badc0;font-size:13px;padding:20px;text-align:center;border:1px dashed #415672;border-radius:9px}.vocab-tools{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+@media(max-width:820px){.vocab-grid{grid-template-columns:1fr}.vocab-list{max-height:280px}.vocab-header{align-items:start;flex-direction:column}}
+@media(max-width:540px){.vocab-grid{padding:0 12px 12px}.vocab-add{margin:0 12px 12px}.vocab-header{padding:17px 14px}.vocab-header h2{font-size:19px}#vocabForm{flex-direction:column;align-items:stretch}.vocab-field{width:100%}.flashcard{min-height:200px}}
+
+/* Confirm-before-save vocabulary preview */
+.vocab-draft{margin-top:13px;border:1px solid #567ea4;background:linear-gradient(120deg,#173657,#153c42);border-radius:13px;padding:15px}
+.vocab-draft-kicker{color:#a2d2ff;font-size:11px;font-weight:850;letter-spacing:.04em}
+.vocab-draft-words{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:9px 0;font-size:17px;overflow-wrap:anywhere}
+.vocab-draft-words strong{font-size:19px;color:#f1f8ff}.vocab-draft-words span:last-child{color:#a4e7d0}
+.vocab-draft-caption{font-size:12px;color:#c3d7e4;margin:4px 0 12px}.vocab-draft #vocabAddBtn{width:100%;min-height:48px}
+.vocab-draft #vocabAddBtn:disabled{opacity:.45;cursor:not-allowed}
+.vocab-relookup{min-height:44px;white-space:nowrap;padding:10px 14px}
+@media(max-width:540px){.vocab-relookup{width:100%}.vocab-draft-words{font-size:15px}.vocab-draft-words strong{font-size:17px}}
+
+</style></head><body><div class="wrap"><div class="eyebrow">KOSEN TRANSFER EXAM · 2028</div>
+<h1>TOEIC 850点＋大学編入 学習チェックリスト＆単語カード</h1><p class="lead">Listening 390点＋Reading 345点＝735点 → <b>850点以上</b>｜2026年12月6日(日) 本番｜数学・物理も継続。週別プラン・単元別チェックに加えて、単語帳とフラッシュカードで英語も復習できます。チェックはブラウザ内に保存します。</p>
+<div class="dashboard"><div class="stat bigstat"><div class="name">総合進捗</div><div class="num" id="totalStat">0 / 0</div><div class="progress"><div class="fill" id="totalBar"></div></div></div><div class="stat"><div class="name">数学</div><div class="num" id="mstat">0 / 0</div></div><div class="stat"><div class="name">物理</div><div class="num" id="pstat">0 / 0</div></div><div class="stat"><div class="name">電気回路</div><div class="num" id="estat">0 / 0</div></div><div class="stat"><div class="name">TOEIC</div><div class="num" id="tstat">0 / 0</div></div></div>
+<div class="callout schedule"><h2>TOEIC850点チャレンジ｜12/6までの6週間</h2>
+<p><strong>週15時間の目安：TOEIC 10時間 ＋ 数学 3時間 ＋ 物理 2時間</strong>。現状Listening 390点＋Reading 345点から、最低850点（＋115点）、練習目標860点（＋125点）を目指す挑戦的な計画です。850点を保証するものではありません。学校の課題・休息も優先し、確保できる時間の中で弱点を集中的に学びます。</p>
+<div class="split"><div><b>平日</b><small>TOEIC75分（単語10分・聞き取り25分・文法/読解40分）×5日＝6時間15分</small></div><div><b>土曜日</b><small>TOEIC2時間30分：模試またはPart 7＋Part 3・4演習。模試週は時間配分を入れ替える</small></div><div><b>日曜日</b><small>TOEIC75分：弱点の復習。数学3時間・物理2時間は週全体で分散</small></div></div>
+<p><strong>現在 Listening 390＋Reading 345＝735点。最低ライン Listening 450＋Reading 400＝850点、上積み目標 Listening 460＋Reading 400＝860点</strong>。TOEICはListening約45分・Reading75分で各100問です。模試での正答数がそのまま得点になるわけではないので、正答率・時間不足を追跡してください。</p>
+<p><strong>配分：Reading 5時間（Part 6の文脈・Part 7の速度を重点）、Listening 4時間（Part 3・4の再聴と設問先読み）、単語 1時間／週。</strong> 語彙は問題演習で間違えた単語を優先します。</p>
+<p><strong>Reading目安：</strong>Part 5=10分、Part 6=10分、Part 7=55分。苦手なPart 6の接続詞・接続副詞は毎週演習し、文の構造と意味を両方確認します。</p>
+<h2 style="margin-top:16px">TOEIC後｜12/7から</h2><p><strong>数学 5時間 ＋ 物理 5時間／週</strong>に切り替えて大学編入対策を優先。英語は必要なら維持学習。下の「週別計画」で週ごとにチェックを付けられます。</p>
+<p><strong>受験申込：</strong>12月6日のTOEICは申し込み済み。試験前日は会場・入室時間・持ち物を確認しましょう。</p></div>
+<div class="callout" id="scorecard"><h2>模試のスコア記録（任意）</h2><p>模試教材に換算スコアが載っている場合のみL/R得点を入力できます。正答数をそのまま入力しないでください。空欄のままで問題ありません。推定点は本番の保証ではありません。</p><div class="scoregrid"><div><strong>模試①｜10/24〜30</strong><label>Listening <input id="s1L" type="number" min="5" max="495" step="5" inputmode="numeric" placeholder="例：410"></label><label>Reading <input id="s1R" type="number" min="5" max="495" step="5" inputmode="numeric" placeholder="例：350"></label><div class="scoretotal" id="sum1">計：—</div></div><div><strong>模試②｜11/14〜20</strong><label>Listening <input id="s2L" type="number" min="5" max="495" step="5" inputmode="numeric" placeholder="L"></label><label>Reading <input id="s2R" type="number" min="5" max="495" step="5" inputmode="numeric" placeholder="R"></label><div class="scoretotal" id="sum2">計：—</div></div><div><strong>模試③｜11/28〜12/4</strong><label>Listening <input id="s3L" type="number" min="5" max="495" step="5" inputmode="numeric" placeholder="L"></label><label>Reading <input id="s3R" type="number" min="5" max="495" step="5" inputmode="numeric" placeholder="R"></label><div class="scoretotal" id="sum3">計：—</div></div></div></div>
+
+<section class="vocab-panel" id="vocabPanel" aria-label="TOEIC単語帳とフラッシュカード">
+  <div class="vocab-header">
+    <div><div class="vocab-kicker">VOCAB STUDIO · TOEIC 850+</div><h2>単語を入れるだけ。自分専用フラッシュカード</h2><p>英単語を入力すると日本語訳が表示されます。意味を確認・編集し、追加ボタンを押してから保存されます。</p></div>
+    <span class="vocab-count" id="vocabCount">0語登録</span>
+  </div>
+  <div class="vocab-add">
+    <form id="vocabForm" autocomplete="off">
+      <label class="vocab-field vocab-english">① 英単語・英語フレーズ<input id="vocabEnglish" type="text" maxlength="120" spellcheck="false" placeholder="例：procurement" autocomplete="off" required></label>
+      <button type="submit" class="vocab-plain vocab-relookup" id="vocabLookupBtn">↻ 意味を検索</button>
+      <label class="vocab-field vocab-japanese">② 日本語訳（確認・編集できます）<input id="vocabJapanese" type="text" maxlength="180" placeholder="自動翻訳の結果が入ります。自由に修正できます"></label>
+    </form>
+    <div class="vocab-draft" id="vocabDraft" aria-label="単語の登録前プレビュー" aria-live="polite">
+      <span class="vocab-draft-kicker">登録前のプレビュー · まだ保存されていません</span>
+      <div class="vocab-draft-words"><strong id="vocabDraftEn">英単語を入力してください</strong><span aria-hidden="true">→</span><span id="vocabDraftJa">日本語訳を確認してから追加できます</span></div>
+      <p class="vocab-draft-caption">③ 日本語訳を確認し、必要なら上の欄で修正してから追加してください。</p>
+      <button type="button" class="vocab-primary" id="vocabAddBtn" disabled>＋ この内容で単語帳に追加</button>
+    </div>
+    <p class="vocab-info" id="vocabStatus" aria-live="polite">英単語を入力すると意味を調べます。Enterキーでは登録されません。内容を確認して追加ボタンを押してください。</p>
+    <p class="vocab-privacy">※ まず内蔵のTOEIC辞書を参照し、見つからなければ公開英和辞書 EJDict（約4.7万項目、CC0）を検索します。辞書は最初の検索時にインターネットから読み込み、端末内にキャッシュします。辞書にない表現だけ外部翻訳（MyMemory）を試します。単語以外の個人情報は入力しないでください。誤訳や複数の意味は登録前に編集してください。 <a id="externalTranslation" href="https://translate.google.com/" target="_blank" rel="noopener noreferrer" style="color:#a8d8ff">Google翻訳で意味を確認</a></p>
+  </div>
+  <div class="vocab-grid">
+    <div class="vocab-study">
+      <div class="vocab-topline"><h3>フラッシュカード</h3><span id="reviewStats">今日の復習 0語</span></div>
+      <div class="vocab-mode" role="group" aria-label="表示するカード">
+        <button type="button" class="vocab-chip selected" data-review="due">今日の復習</button>
+        <button type="button" class="vocab-chip" data-review="all">全カード</button>
+        <button type="button" class="vocab-chip" data-review="missed">苦手な単語</button>
+      </div>
+      <button type="button" class="flashcard" id="flashcard" aria-label="カードをめくる">
+        <span class="flashcard-label" id="flashcardSide">ENGLISH · タップで裏返す</span>
+        <span class="flashcard-main" id="flashcardText">単語を追加すると、ここにカードが表示されます</span>
+        <span class="flashcard-bottom" id="flashcardHint">英単語 → 日本語訳</span>
+      </button>
+      <div class="vocab-nav"><button type="button" class="vocab-plain" id="vocabPrev">← 前へ</button><span id="vocabPosition">0 / 0</span><button type="button" class="vocab-plain" id="vocabNext">次へ →</button></div>
+      <div class="vocab-answers"><button type="button" class="vocab-again" id="vocabAgain">もう一度</button><button type="button" class="vocab-know" id="vocabKnow">覚えた ✓</button></div>
+      <div class="vocab-extras"><button type="button" class="vocab-plain" id="vocabSpeak">🔊 発音する</button><button type="button" class="vocab-plain" id="vocabShuffle">⇄ シャッフル</button></div>
+      <p class="vocab-subtle">「覚えた」は1→3→7→14→30日後を目安に復習。「もう一度」は約10分後に再出題します。「全カード」ではいつでも練習できます。</p>
+    </div>
+    <div class="vocab-listpanel">
+      <div class="vocab-topline"><h3>登録した単語</h3><span id="vocabTotalWords">0語</span></div>
+      <input type="search" id="vocabSearch" class="vocab-search" placeholder="英語・日本語で検索" aria-label="単語帳を検索">
+      <div class="vocab-list" id="vocabList"></div>
+      <p class="vocab-subtle">登録前にも訳を編集できます。登録後の編集・削除にも対応しています。学習進捗と単語帳はこの端末・ブラウザ内に保存され、端末間では自動同期されません。</p>
+      <div class="vocab-tools"><button type="button" class="vocab-plain" id="vocabCsv">単語帳をCSVで保存</button><button type="button" class="vocab-plain" id="vocabExport">単語帳をJSONで保存</button><button type="button" class="vocab-plain" id="vocabImportBtn">単語帳を読み込む</button><input type="file" id="vocabImportFile" accept=".json,application/json" hidden></div>
+    </div>
+  </div>
+</section>
+
+<div class="toolbar"><div class="seg" id="tabBtns"><button class="btn" data-tab="all">すべて</button><button class="btn" data-tab="数学">数学</button><button class="btn" data-tab="物理">物理</button><button class="btn" data-tab="電気回路">電気回路</button><button class="btn" data-tab="TOEIC">TOEIC</button><button class="btn active" data-tab="weeks">週別計画（850点）</button></div><input class="search" id="search" type="search" placeholder="単元・キーワードで検索" aria-label="単元を検索"><div class="right"><button class="btn" id="priorityBtn">最優先のみ</button><button class="btn" id="openBtn">すべて開く</button></div></div>
+<p class="note"><span id="savedAt">進捗は自動保存されます。</span> ブラウザのデータ削除・別端末への移動に備えて、定期的に「バックアップ」を保存してください。</p><div id="sections"></div>
+<div class="callout"><h2>スマホで使う場合の注意</h2><p>GitHub Pagesなどで公開すればスマホからURLで開けます。ただしチェック履歴・単語帳は端末ごとに保存され、自動同期はしません。PCからスマホへ移す場合は、「進捗をバックアップ」でJSONを保存し、スマホで「バックアップを読み込む」を使ってください。公開リポジトリに個人データ入りのバックアップを置かないでください。</p></div>
+<div class="callout"><h2>進捗の保存・引き継ぎ</h2><p>チェックするたびにこのブラウザ内へ自動保存します。同じファイルを同じブラウザで開くと復元されます。端末を替える場合はバックアップファイルで引き継げます。</p><div class="seg" style="margin-top:12px"><button class="btn" id="exportBtn">進捗＋単語帳をバックアップ（JSON）</button><button class="btn" id="importBtn">バックアップを読み込む</button><button class="btn" id="resetBtn">チェックを初期化</button><input id="importFile" type="file" accept="application/json,.json" style="display:none"></div></div>
+<p class="foot">注意：進捗はChatGPTの会話とは同期しません。端末間で同期したい場合は、別添Excel版をGoogleドライブやOneDriveに保存して利用してください。学習分野は志望校の公表範囲に基づく対策候補です。850点到達を保証するものではありません。練習目標は860点（L460・R400）です。12/6まではTOEICを重点対策し、12/7以降は数学・物理を優先します。</p></div><div class="toast" id="toast" role="status"></div>
+<script>
+'use strict';
+const DATA=[{"id":"m1-1","subject":"数学","group":"① 微分積分（1変数）","priority":"最優先","label":"極限・連続性・微分可能性"},{"id":"m1-2","subject":"数学","group":"① 微分積分（1変数）","priority":"最優先","label":"積・商・合成関数の微分"},{"id":"m1-3","subject":"数学","group":"① 微分積分（1変数）","priority":"最優先","label":"指数関数・対数関数・三角関数・逆三角関数の微分"},{"id":"m1-4","subject":"数学","group":"① 微分積分（1変数）","priority":"最優先","label":"高階導関数・ライプニッツの公式"},{"id":"m1-5","subject":"数学","group":"① 微分積分（1変数）","priority":"最優先","label":"接線・極値・最大最小問題"},{"id":"m1-6","subject":"数学","group":"① 微分積分（1変数）","priority":"最優先","label":"テイラー展開・マクローリン展開"},{"id":"m1-7","subject":"数学","group":"① 微分積分（1変数）","priority":"最優先","label":"不定積分・置換積分・部分積分"},{"id":"m1-8","subject":"数学","group":"① 微分積分（1変数）","priority":"最優先","label":"有理関数・三角関数の積分"},{"id":"m1-9","subject":"数学","group":"① 微分積分（1変数）","priority":"最優先","label":"広義積分"},{"id":"m1-10","subject":"数学","group":"① 微分積分（1変数）","priority":"最優先","label":"定積分の応用（面積・体積・曲線の長さ）"},{"id":"m2-1","subject":"数学","group":"② 線形代数","priority":"最優先","label":"行列の和・積・転置・逆行列"},{"id":"m2-2","subject":"数学","group":"② 線形代数","priority":"最優先","label":"行列式の計算・性質"},{"id":"m2-3","subject":"数学","group":"② 線形代数","priority":"最優先","label":"連立1次方程式・掃き出し法"},{"id":"m2-4","subject":"数学","group":"② 線形代数","priority":"最優先","label":"階数（ランク）と解の条件"},{"id":"m2-5","subject":"数学","group":"② 線形代数","priority":"最優先","label":"ベクトルの一次独立・一次従属"},{"id":"m2-6","subject":"数学","group":"② 線形代数","priority":"最優先","label":"ベクトル空間・基底・次元"},{"id":"m2-7","subject":"数学","group":"② 線形代数","priority":"最優先","label":"線形写像・表現行列"},{"id":"m2-8","subject":"数学","group":"② 線形代数","priority":"最優先","label":"固有値・固有ベクトル"},{"id":"m2-9","subject":"数学","group":"② 線形代数","priority":"最優先","label":"行列の対角化・対角化可能条件"},{"id":"m2-10","subject":"数学","group":"② 線形代数","priority":"最優先","label":"直交行列・対称行列"},{"id":"m2-11","subject":"数学","group":"② 線形代数","priority":"最優先","label":"内積・正規直交基底・グラム・シュミット法"},{"id":"m3-1","subject":"数学","group":"③ 多変数関数の微分積分","priority":"最優先","label":"偏微分・全微分"},{"id":"m3-2","subject":"数学","group":"③ 多変数関数の微分積分","priority":"最優先","label":"合成関数の偏微分"},{"id":"m3-3","subject":"数学","group":"③ 多変数関数の微分積分","priority":"最優先","label":"2変数関数の極値・ヘッセ行列"},{"id":"m3-4","subject":"数学","group":"③ 多変数関数の微分積分","priority":"最優先","label":"条件付き極値・ラグランジュ未定乗数法"},{"id":"m3-5","subject":"数学","group":"③ 多変数関数の微分積分","priority":"最優先","label":"重積分・積分順序の交換"},{"id":"m3-6","subject":"数学","group":"③ 多変数関数の微分積分","priority":"最優先","label":"変数変換とヤコビアン"},{"id":"m3-7","subject":"数学","group":"③ 多変数関数の微分積分","priority":"最優先","label":"極座標・円柱座標・球座標での積分"},{"id":"m3-8","subject":"数学","group":"③ 多変数関数の微分積分","priority":"最優先","label":"三重積分"},{"id":"m3-9","subject":"数学","group":"③ 多変数関数の微分積分","priority":"最優先","label":"ベクトル場の勾配・発散・回転"},{"id":"m3-10","subject":"数学","group":"③ 多変数関数の微分積分","priority":"最優先","label":"線積分・面積分"},{"id":"m3-11","subject":"数学","group":"③ 多変数関数の微分積分","priority":"最優先","label":"グリーンの定理・ガウスの発散定理・ストークスの定理"},{"id":"m4-1","subject":"数学","group":"④ 微分方程式","priority":"重要","label":"変数分離形の1階微分方程式"},{"id":"m4-2","subject":"数学","group":"④ 微分方程式","priority":"重要","label":"1階線形微分方程式・積分因子"},{"id":"m4-3","subject":"数学","group":"④ 微分方程式","priority":"重要","label":"同次形・ベルヌーイ型・完全微分形"},{"id":"m4-4","subject":"数学","group":"④ 微分方程式","priority":"重要","label":"2階定数係数線形微分方程式（同次）"},{"id":"m4-5","subject":"数学","group":"④ 微分方程式","priority":"重要","label":"特性方程式・重解・複素根"},{"id":"m4-6","subject":"数学","group":"④ 微分方程式","priority":"重要","label":"2階非同次方程式（未定係数法）"},{"id":"m4-7","subject":"数学","group":"④ 微分方程式","priority":"重要","label":"定数変化法"},{"id":"m4-8","subject":"数学","group":"④ 微分方程式","priority":"重要","label":"初期値問題・境界値問題"},{"id":"m4-9","subject":"数学","group":"④ 微分方程式","priority":"重要","label":"連立微分方程式と行列"},{"id":"m4-10","subject":"数学","group":"④ 微分方程式","priority":"重要","label":"単振動・減衰振動・RLC回路への応用"},{"id":"m4-11","subject":"数学","group":"④ 微分方程式","priority":"重要","label":"ラプラス変換による解法"},{"id":"m5-1","subject":"数学","group":"⑤ 複素関数","priority":"重要","label":"複素数の極形式・偏角・ド・モアブルの定理"},{"id":"m5-2","subject":"数学","group":"⑤ 複素関数","priority":"重要","label":"複素数の指数関数・対数関数"},{"id":"m5-3","subject":"数学","group":"⑤ 複素関数","priority":"重要","label":"複素関数の微分・正則性"},{"id":"m5-4","subject":"数学","group":"⑤ 複素関数","priority":"重要","label":"コーシー・リーマンの関係式"},{"id":"m5-5","subject":"数学","group":"⑤ 複素関数","priority":"重要","label":"複素積分・コーシーの積分定理"},{"id":"m5-6","subject":"数学","group":"⑤ 複素関数","priority":"重要","label":"コーシーの積分公式"},{"id":"m5-7","subject":"数学","group":"⑤ 複素関数","priority":"重要","label":"テイラー級数・ローラン級数"},{"id":"m5-8","subject":"数学","group":"⑤ 複素関数","priority":"重要","label":"特異点・極・留数"},{"id":"m5-9","subject":"数学","group":"⑤ 複素関数","priority":"重要","label":"留数定理による積分計算"},{"id":"m6-1","subject":"数学","group":"⑥ 確率・統計","priority":"大学別","label":"順列・組合せ・条件付き確率"},{"id":"m6-2","subject":"数学","group":"⑥ 確率・統計","priority":"大学別","label":"ベイズの定理・独立性"},{"id":"m6-3","subject":"数学","group":"⑥ 確率・統計","priority":"大学別","label":"確率変数・確率分布"},{"id":"m6-4","subject":"数学","group":"⑥ 確率・統計","priority":"大学別","label":"期待値・分散・共分散"},{"id":"m6-5","subject":"数学","group":"⑥ 確率・統計","priority":"大学別","label":"二項分布・ポアソン分布・正規分布"},{"id":"m6-6","subject":"数学","group":"⑥ 確率・統計","priority":"大学別","label":"連続確率変数・確率密度関数"},{"id":"m6-7","subject":"数学","group":"⑥ 確率・統計","priority":"大学別","label":"同時分布・周辺分布"},{"id":"m6-8","subject":"数学","group":"⑥ 確率・統計","priority":"大学別","label":"標本平均・中心極限定理"},{"id":"m6-9","subject":"数学","group":"⑥ 確率・統計","priority":"大学別","label":"推定・信頼区間・仮説検定"},{"id":"m7-1","subject":"数学","group":"⑦ フーリエ解析","priority":"大学別","label":"周期関数と三角関数の直交性"},{"id":"m7-2","subject":"数学","group":"⑦ フーリエ解析","priority":"大学別","label":"フーリエ級数の係数計算"},{"id":"m7-3","subject":"数学","group":"⑦ フーリエ解析","priority":"大学別","label":"偶関数・奇関数のフーリエ級数"},{"id":"m7-4","subject":"数学","group":"⑦ フーリエ解析","priority":"大学別","label":"フーリエ変換・逆変換"},{"id":"m7-5","subject":"数学","group":"⑦ フーリエ解析","priority":"大学別","label":"ラプラス変換・逆変換"},{"id":"m7-6","subject":"数学","group":"⑦ フーリエ解析","priority":"大学別","label":"畳み込みと変換の性質"},{"id":"p1-1","subject":"物理","group":"① 力学：運動の基本","priority":"最優先","label":"位置・速度・加速度と微分積分の関係"},{"id":"p1-2","subject":"物理","group":"① 力学：運動の基本","priority":"最優先","label":"等加速度運動・放物運動"},{"id":"p1-3","subject":"物理","group":"① 力学：運動の基本","priority":"最優先","label":"ベクトルによる運動の表現"},{"id":"p1-4","subject":"物理","group":"① 力学：運動の基本","priority":"最優先","label":"円運動と向心加速度"},{"id":"p1-5","subject":"物理","group":"① 力学：運動の基本","priority":"最優先","label":"接線方向・法線方向の加速度"},{"id":"p1-6","subject":"物理","group":"① 力学：運動の基本","priority":"最優先","label":"ニュートンの運動の3法則"},{"id":"p1-7","subject":"物理","group":"① 力学：運動の基本","priority":"最優先","label":"自由物体図（力の図示）"},{"id":"p1-8","subject":"物理","group":"① 力学：運動の基本","priority":"最優先","label":"斜面・張力・垂直抗力・摩擦力"},{"id":"p1-9","subject":"物理","group":"① 力学：運動の基本","priority":"最優先","label":"静止摩擦・動摩擦"},{"id":"p1-10","subject":"物理","group":"① 力学：運動の基本","priority":"最優先","label":"空気抵抗など速度に依存する抵抗力"},{"id":"p1-11","subject":"物理","group":"① 力学：運動の基本","priority":"最優先","label":"運動方程式から速度・位置を求める"},{"id":"p2-1","subject":"物理","group":"② 力学：エネルギー・運動量","priority":"最優先","label":"仕事と仕事率"},{"id":"p2-2","subject":"物理","group":"② 力学：エネルギー・運動量","priority":"最優先","label":"運動エネルギーと仕事の定理"},{"id":"p2-3","subject":"物理","group":"② 力学：エネルギー・運動量","priority":"最優先","label":"重力・弾性力による位置エネルギー"},{"id":"p2-4","subject":"物理","group":"② 力学：エネルギー・運動量","priority":"最優先","label":"保存力・非保存力"},{"id":"p2-5","subject":"物理","group":"② 力学：エネルギー・運動量","priority":"最優先","label":"力学的エネルギー保存則"},{"id":"p2-6","subject":"物理","group":"② 力学：エネルギー・運動量","priority":"最優先","label":"運動量・力積・運動量保存則"},{"id":"p2-7","subject":"物理","group":"② 力学：エネルギー・運動量","priority":"最優先","label":"重心と重心の運動"},{"id":"p2-8","subject":"物理","group":"② 力学：エネルギー・運動量","priority":"最優先","label":"1次元・2次元衝突"},{"id":"p2-9","subject":"物理","group":"② 力学：エネルギー・運動量","priority":"最優先","label":"反発係数と衝突前後の速度"},{"id":"p2-10","subject":"物理","group":"② 力学：エネルギー・運動量","priority":"最優先","label":"衝突と摩擦・エネルギー損失の複合問題"},{"id":"p3-1","subject":"物理","group":"③ 力学：振動・剛体・発展","priority":"重要","label":"単振動とフックの法則"},{"id":"p3-2","subject":"物理","group":"③ 力学：振動・剛体・発展","priority":"重要","label":"単振り子・ばね振り子"},{"id":"p3-3","subject":"物理","group":"③ 力学：振動・剛体・発展","priority":"重要","label":"連成振動の基礎"},{"id":"p3-4","subject":"物理","group":"③ 力学：振動・剛体・発展","priority":"重要","label":"減衰振動・強制振動・共振"},{"id":"p3-5","subject":"物理","group":"③ 力学：振動・剛体・発展","priority":"重要","label":"回転運動の角速度・角加速度"},{"id":"p3-6","subject":"物理","group":"③ 力学：振動・剛体・発展","priority":"重要","label":"力のモーメント・角運動量"},{"id":"p3-7","subject":"物理","group":"③ 力学：振動・剛体・発展","priority":"重要","label":"慣性モーメントの計算"},{"id":"p3-8","subject":"物理","group":"③ 力学：振動・剛体・発展","priority":"重要","label":"剛体の回転運動方程式"},{"id":"p3-9","subject":"物理","group":"③ 力学：振動・剛体・発展","priority":"重要","label":"並進と回転が組み合わさる運動"},{"id":"p3-10","subject":"物理","group":"③ 力学：振動・剛体・発展","priority":"重要","label":"転がり運動・回転のエネルギー"},{"id":"p3-11","subject":"物理","group":"③ 力学：振動・剛体・発展","priority":"重要","label":"万有引力・中心力・円軌道"},{"id":"p3-12","subject":"物理","group":"③ 力学：振動・剛体・発展","priority":"重要","label":"非慣性系・慣性力・遠心力・コリオリ力（発展）"},{"id":"p4-1","subject":"物理","group":"④ 電磁気学：静電場・電位","priority":"最優先","label":"クーロンの法則・電場の重ね合わせ"},{"id":"p4-2","subject":"物理","group":"④ 電磁気学：静電場・電位","priority":"最優先","label":"点電荷・連続電荷分布の電場"},{"id":"p4-3","subject":"物理","group":"④ 電磁気学：静電場・電位","priority":"最優先","label":"電場の積分計算（線・面・体積）"},{"id":"p4-4","subject":"物理","group":"④ 電磁気学：静電場・電位","priority":"最優先","label":"電気力線・電束"},{"id":"p4-5","subject":"物理","group":"④ 電磁気学：静電場・電位","priority":"最優先","label":"ガウスの法則"},{"id":"p4-6","subject":"物理","group":"④ 電磁気学：静電場・電位","priority":"最優先","label":"球対称・円筒対称・平面対称の電場"},{"id":"p4-7","subject":"物理","group":"④ 電磁気学：静電場・電位","priority":"最優先","label":"電位・電位差と電場の関係"},{"id":"p4-8","subject":"物理","group":"④ 電磁気学：静電場・電位","priority":"最優先","label":"電位の積分計算"},{"id":"p4-9","subject":"物理","group":"④ 電磁気学：静電場・電位","priority":"最優先","label":"静電エネルギー・電気双極子"},{"id":"p4-10","subject":"物理","group":"④ 電磁気学：静電場・電位","priority":"最優先","label":"導体内部の電場と静電誘導"},{"id":"p4-11","subject":"物理","group":"④ 電磁気学：静電場・電位","priority":"最優先","label":"境界条件と電位・電場の連続性"},{"id":"p5-1","subject":"物理","group":"⑤ 電磁気学：コンデンサ・誘電体","priority":"最優先","label":"平行平板コンデンサの静電容量"},{"id":"p5-2","subject":"物理","group":"⑤ 電磁気学：コンデンサ・誘電体","priority":"最優先","label":"直列・並列接続の合成容量"},{"id":"p5-3","subject":"物理","group":"⑤ 電磁気学：コンデンサ・誘電体","priority":"最優先","label":"静電エネルギー"},{"id":"p5-4","subject":"物理","group":"⑤ 電磁気学：コンデンサ・誘電体","priority":"最優先","label":"誘電率・分極・誘電体"},{"id":"p5-5","subject":"物理","group":"⑤ 電磁気学：コンデンサ・誘電体","priority":"最優先","label":"電束密度と電場の関係"},{"id":"p5-6","subject":"物理","group":"⑤ 電磁気学：コンデンサ・誘電体","priority":"最優先","label":"誘電体を一部挿入したコンデンサ"},{"id":"p5-7","subject":"物理","group":"⑤ 電磁気学：コンデンサ・誘電体","priority":"最優先","label":"複数の誘電体を含むコンデンサ"},{"id":"p5-8","subject":"物理","group":"⑤ 電磁気学：コンデンサ・誘電体","priority":"最優先","label":"コンデンサに働く力・エネルギーによる計算"},{"id":"p5-9","subject":"物理","group":"⑤ 電磁気学：コンデンサ・誘電体","priority":"最優先","label":"誘電体境界面での電場・電束密度の条件"},{"id":"p5-10","subject":"物理","group":"⑤ 電磁気学：コンデンサ・誘電体","priority":"最優先","label":"球形・円筒形コンデンサの容量"},{"id":"p6-1","subject":"物理","group":"⑥ 電磁気学：電流・磁場","priority":"最優先","label":"電流密度・オームの法則・抵抗率"},{"id":"p6-2","subject":"物理","group":"⑥ 電磁気学：電流・磁場","priority":"最優先","label":"ジュール熱・電力"},{"id":"p6-3","subject":"物理","group":"⑥ 電磁気学：電流・磁場","priority":"最優先","label":"ローレンツ力"},{"id":"p6-4","subject":"物理","group":"⑥ 電磁気学：電流・磁場","priority":"最優先","label":"磁場中の荷電粒子の運動"},{"id":"p6-5","subject":"物理","group":"⑥ 電磁気学：電流・磁場","priority":"最優先","label":"電流に働く力・トルク"},{"id":"p6-6","subject":"物理","group":"⑥ 電磁気学：電流・磁場","priority":"最優先","label":"ビオ・サバールの法則"},{"id":"p6-7","subject":"物理","group":"⑥ 電磁気学：電流・磁場","priority":"最優先","label":"アンペールの法則"},{"id":"p6-8","subject":"物理","group":"⑥ 電磁気学：電流・磁場","priority":"最優先","label":"直線電流・円形電流・ソレノイドの磁場"},{"id":"p6-9","subject":"物理","group":"⑥ 電磁気学：電流・磁場","priority":"最優先","label":"磁束・磁束密度"},{"id":"p6-10","subject":"物理","group":"⑥ 電磁気学：電流・磁場","priority":"最優先","label":"電流ループと磁気モーメント"},{"id":"p6-11","subject":"物理","group":"⑥ 電磁気学：電流・磁場","priority":"最優先","label":"磁性体・磁界・透磁率の基礎"},{"id":"p7-1","subject":"物理","group":"⑦ 電磁気学：電磁誘導・発展","priority":"重要","label":"ファラデーの電磁誘導の法則"},{"id":"p7-2","subject":"物理","group":"⑦ 電磁気学：電磁誘導・発展","priority":"重要","label":"レンツの法則と誘導起電力の向き"},{"id":"p7-3","subject":"物理","group":"⑦ 電磁気学：電磁誘導・発展","priority":"重要","label":"運動する導体に生じる起電力"},{"id":"p7-4","subject":"物理","group":"⑦ 電磁気学：電磁誘導・発展","priority":"重要","label":"自己誘導・相互誘導"},{"id":"p7-5","subject":"物理","group":"⑦ 電磁気学：電磁誘導・発展","priority":"重要","label":"インダクタンスと磁気エネルギー"},{"id":"p7-6","subject":"物理","group":"⑦ 電磁気学：電磁誘導・発展","priority":"重要","label":"変位電流"},{"id":"p7-7","subject":"物理","group":"⑦ 電磁気学：電磁誘導・発展","priority":"重要","label":"マクスウェル方程式の積分形・微分形"},{"id":"p7-8","subject":"物理","group":"⑦ 電磁気学：電磁誘導・発展","priority":"重要","label":"電磁波の基礎（発展）"},{"id":"p7-9","subject":"物理","group":"⑦ 電磁気学：電磁誘導・発展","priority":"重要","label":"電磁場のエネルギー・ポインティングベクトル（発展）"},{"id":"p8-1","subject":"物理","group":"⑧ 物理：熱学・波動","priority":"阪大で物理を選ぶ場合","label":"理想気体の状態方程式・状態変化"},{"id":"p8-2","subject":"物理","group":"⑧ 物理：熱学・波動","priority":"阪大で物理を選ぶ場合","label":"熱力学第1法則・内部エネルギー"},{"id":"p8-3","subject":"物理","group":"⑧ 物理：熱学・波動","priority":"阪大で物理を選ぶ場合","label":"等温・定圧・定積・断熱変化"},{"id":"p8-4","subject":"物理","group":"⑧ 物理：熱学・波動","priority":"阪大で物理を選ぶ場合","label":"気体のする仕事とPV図"},{"id":"p8-5","subject":"物理","group":"⑧ 物理：熱学・波動","priority":"阪大で物理を選ぶ場合","label":"比熱・熱容量・エンタルピーの基礎"},{"id":"p8-6","subject":"物理","group":"⑧ 物理：熱学・波動","priority":"阪大で物理を選ぶ場合","label":"熱力学第2法則・エントロピー"},{"id":"p8-7","subject":"物理","group":"⑧ 物理：熱学・波動","priority":"阪大で物理を選ぶ場合","label":"カルノーサイクルと熱効率"},{"id":"p8-8","subject":"物理","group":"⑧ 物理：熱学・波動","priority":"阪大で物理を選ぶ場合","label":"波の方程式・位相・波の重ね合わせ"},{"id":"p8-9","subject":"物理","group":"⑧ 物理：熱学・波動","priority":"阪大で物理を選ぶ場合","label":"定常波・干渉・反射・屈折"},{"id":"p8-10","subject":"物理","group":"⑧ 物理：熱学・波動","priority":"阪大で物理を選ぶ場合","label":"ドップラー効果"},{"id":"p8-11","subject":"物理","group":"⑧ 物理：熱学・波動","priority":"阪大で物理を選ぶ場合","label":"弦・気柱の固有振動"},{"id":"e1-1","subject":"電気回路","group":"① 電気電子回路","priority":"阪大で回路を選ぶ場合","label":"直流回路：キルヒホッフの法則、節点電位法、閉路電流法"},{"id":"e1-2","subject":"電気回路","group":"① 電気電子回路","priority":"阪大で回路を選ぶ場合","label":"回路網：テブナン・ノートンの定理、重ね合わせの理"},{"id":"e1-3","subject":"電気回路","group":"① 電気電子回路","priority":"阪大で回路を選ぶ場合","label":"交流回路：複素インピーダンス、フェーザ、RLC回路"},{"id":"e1-4","subject":"電気回路","group":"① 電気電子回路","priority":"阪大で回路を選ぶ場合","label":"共振：直列共振、並列共振、共振周波数、Q値"},{"id":"e1-5","subject":"電気回路","group":"① 電気電子回路","priority":"阪大で回路を選ぶ場合","label":"電力：有効電力、無効電力、皮相電力、力率"},{"id":"e1-6","subject":"電気回路","group":"① 電気電子回路","priority":"阪大で回路を選ぶ場合","label":"過渡現象：RC回路、RL回路、RLC回路の過渡応答"},{"id":"e1-7","subject":"電気回路","group":"① 電気電子回路","priority":"阪大で回路を選ぶ場合","label":"回路解析：微分方程式・ラプラス変換による回路解析"},{"id":"e1-8","subject":"電気回路","group":"① 電気電子回路","priority":"阪大で回路を選ぶ場合","label":"二端子対回路：Zパラメータ、Yパラメータ、四端子定数"},{"id":"e1-9","subject":"電気回路","group":"① 電気電子回路","priority":"阪大で回路を選ぶ場合","label":"電子回路：ダイオード、トランジスタ、基本増幅回路"},{"id":"t1-1","subject":"TOEIC","group":"① 現状確認・学習設計","priority":"12/6まで最優先","label":"公式形式に沿った問題で時間を計って弱点を記録"},{"id":"t1-2","subject":"TOEIC","group":"① 現状確認・学習設計","priority":"12/6まで最優先","label":"リスニングとリーディングの正答率・時間不足を記録"},{"id":"t1-3","subject":"TOEIC","group":"① 現状確認・学習設計","priority":"12/6まで最優先","label":"ミスを文法・語彙・内容理解・時間不足に分類"},{"id":"t2-1","subject":"TOEIC","group":"② リスニング Part 1・2","priority":"12/6まで最優先","label":"Part 1：写真描写の人物・動作・物の位置"},{"id":"t2-2","subject":"TOEIC","group":"② リスニング Part 1・2","priority":"12/6まで最優先","label":"Part 2：疑問詞・依頼・提案と自然な応答"},{"id":"t2-3","subject":"TOEIC","group":"② リスニング Part 1・2","priority":"12/6まで最優先","label":"Part 2：間接応答・言い換え表現"},{"id":"t2-4","subject":"TOEIC","group":"② リスニング Part 1・2","priority":"12/6まで最優先","label":"音声を聞き直してスクリプト確認・音読"},{"id":"t3-1","subject":"TOEIC","group":"③ リスニング Part 3・4","priority":"12/6まで最優先","label":"Part 3：会話の目的・場所・話者の意図"},{"id":"t3-2","subject":"TOEIC","group":"③ リスニング Part 3・4","priority":"12/6まで最優先","label":"Part 3：設問と選択肢を先読みする練習"},{"id":"t3-3","subject":"TOEIC","group":"③ リスニング Part 3・4","priority":"12/6まで最優先","label":"Part 4：説明文・案内・電話メッセージの要点"},{"id":"t3-4","subject":"TOEIC","group":"③ リスニング Part 3・4","priority":"12/6まで最優先","label":"Part 4：図表を用いる設問の処理"},{"id":"t3-5","subject":"TOEIC","group":"③ リスニング Part 3・4","priority":"12/6まで最優先","label":"聞き取れなかった音の連結・弱形の確認"},{"id":"t4-1","subject":"TOEIC","group":"④ リーディング Part 5・6","priority":"12/6まで最優先","label":"Part 5：品詞・動詞の時制・主語と動詞の一致"},{"id":"t4-2","subject":"TOEIC","group":"④ リーディング Part 5・6","priority":"12/6まで最優先","label":"Part 5：前置詞・接続詞・関係詞"},{"id":"t4-3","subject":"TOEIC","group":"④ リーディング Part 5・6","priority":"12/6まで最優先","label":"Part 6：接続詞と接続副詞の意味・文のつながり"},{"id":"t4-4","subject":"TOEIC","group":"④ リーディング Part 5・6","priority":"12/6まで最優先","label":"Part 6：空所前後の論理関係（追加・対比・因果・例示）"},{"id":"t4-5","subject":"TOEIC","group":"④ リーディング Part 5・6","priority":"12/6まで最優先","label":"Part 6：文挿入と段落全体の流れ"},{"id":"t5-1","subject":"TOEIC","group":"⑤ リーディング Part 7","priority":"12/6まで最優先","label":"Part 7：シングルパッセージの情報検索"},{"id":"t5-2","subject":"TOEIC","group":"⑤ リーディング Part 7","priority":"12/6まで最優先","label":"Part 7：ダブル・トリプルパッセージの照合"},{"id":"t5-3","subject":"TOEIC","group":"⑤ リーディング Part 7","priority":"12/6まで最優先","label":"Part 7：言い換え・推論問題"},{"id":"t5-4","subject":"TOEIC","group":"⑤ リーディング Part 7","priority":"12/6まで最優先","label":"75分の読解パートの時間配分を練習"},{"id":"t6-1","subject":"TOEIC","group":"⑥ 直前演習・復習","priority":"12/6まで最優先","label":"本番形式の模試を1回解いて分析"},{"id":"t6-2","subject":"TOEIC","group":"⑥ 直前演習・復習","priority":"12/6まで最優先","label":"本番形式の模試をもう1回解いて分析"},{"id":"t6-3","subject":"TOEIC","group":"⑥ 直前演習・復習","priority":"12/6まで最優先","label":"誤答問題を翌日・3日後に解き直す"},{"id":"t6-4","subject":"TOEIC","group":"⑥ 直前演習・復習","priority":"12/6まで最優先","label":"試験前日：受験票・会場・移動・筆記具を確認"},{"id":"t6-5","subject":"TOEIC","group":"⑥ 直前演習・復習","priority":"12/6まで最優先","label":"試験前日：十分な睡眠を確保"},{"id":"t850-1","subject":"TOEIC","group":"⑦ 850点対策：語彙と文法","priority":"12/6まで最優先","label":"頻出ビジネス語彙15〜25語を文脈と一緒に学び、翌日・3日後・1週間後に復習"},{"id":"t850-2","subject":"TOEIC","group":"⑦ 850点対策：語彙と文法","priority":"12/6まで最優先","label":"品詞・動詞・前置詞・接続詞を区別してPart 5で誤答理由を説明"},{"id":"t850-3","subject":"TOEIC","group":"⑦ 850点対策：語彙と文法","priority":"12/6まで最優先","label":"接続詞と接続副詞の違いを文構造で見分ける"},{"id":"t850-4","subject":"TOEIC","group":"⑦ 850点対策：語彙と文法","priority":"12/6まで最優先","label":"Part 6で指示語・時系列・逆接・追加・因果・文挿入を整理"},{"id":"t850-5","subject":"TOEIC","group":"⑧ 850点対策：聞き取り","priority":"12/6まで最優先","label":"初回は停止せず本番と同じ条件でPart 3・4を解く"},{"id":"t850-6","subject":"TOEIC","group":"⑧ 850点対策：聞き取り","priority":"12/6まで最優先","label":"誤答した音声をスクリプト確認→再聴→シャドーイング"},{"id":"t850-7","subject":"TOEIC","group":"⑧ 850点対策：聞き取り","priority":"12/6まで最優先","label":"設問先読みと解答根拠のキーワード拾いを定着"},{"id":"t850-8","subject":"TOEIC","group":"⑧ 850点対策：聞き取り","priority":"12/6まで最優先","label":"Part 2のひっかけ（同音・部分一致・間接応答）を復習"},{"id":"t850-9","subject":"TOEIC","group":"⑨ 850点対策：読解速度","priority":"12/6まで最優先","label":"Part 5を目安10分以内で解く練習"},{"id":"t850-10","subject":"TOEIC","group":"⑨ 850点対策：読解速度","priority":"12/6まで最優先","label":"Part 6を目安10分以内で解く練習"},{"id":"t850-11","subject":"TOEIC","group":"⑨ 850点対策：読解速度","priority":"12/6まで最優先","label":"Part 7を目安55分で解く練習"},{"id":"t850-12","subject":"TOEIC","group":"⑨ 850点対策：読解速度","priority":"12/6まで最優先","label":"ダブル・トリプルパッセージで複数文書の情報を照合"},{"id":"t850-13","subject":"TOEIC","group":"⑨ 850点対策：読解速度","priority":"12/6まで最優先","label":"正解根拠の文を特定し、誤答選択肢が違う理由を確認"},{"id":"t850-14","subject":"TOEIC","group":"⑩ 850点対策：模試","priority":"12/6まで最優先","label":"45分＋75分の本番形式で少なくとも3回練習"},{"id":"t850-15","subject":"TOEIC","group":"⑩ 850点対策：模試","priority":"12/6まで最優先","label":"模試ごとにPart別の誤答数とReadingの残り時間を記録"},{"id":"t850-16","subject":"TOEIC","group":"⑩ 850点対策：模試","priority":"12/6まで最優先","label":"模試の誤答は翌日・3日後にもう一度解く"}];
+const WEEKS=[{"id":"w850-1","group":"第1週｜10/24〜10/30：弱点の特定","subject":"TOEIC","label":"公式問題集等で2時間の診断模試①を1回（Listening・Readingの正誤を記録）"},{"id":"w850-2","group":"第1週｜10/24〜10/30：弱点の特定","subject":"TOEIC","label":"模試①の誤答をPart別・原因別に分類して、Readingの解き残しを記録"},{"id":"w850-3","group":"第1週｜10/24〜10/30：弱点の特定","subject":"TOEIC","label":"Part 5を計80問（品詞・時制・接続詞中心）＋解き直し"},{"id":"w850-4","group":"第1週｜10/24〜10/30：弱点の特定","subject":"TOEIC","label":"Part 6を4文書（16問）解き、接続詞／接続副詞の根拠を説明"},{"id":"w850-5","group":"第1週｜10/24〜10/30：弱点の特定","subject":"TOEIC","label":"Part 3・4を計8セット練習し、聞けない箇所だけ原稿で確認"},{"id":"w850-6","group":"第1週｜10/24〜10/30：弱点の特定","subject":"TOEIC","label":"毎日15〜25語の頻出語彙に触れ、既習単語も再確認"},{"id":"w850-7","group":"第1週｜10/24〜10/30：弱点の特定","subject":"数学","label":"微分・積分の基本計算を週3時間の中で確認"},{"id":"w850-8","group":"第1週｜10/24〜10/30：弱点の特定","subject":"物理","label":"速度・加速度・運動方程式を週2時間の中で確認"},{"id":"w850-9","group":"第2週｜10/31〜11/6：聞き取り＋文法","subject":"TOEIC","label":"Part 2を計60問、ひっかけ・間接応答を分類して復習"},{"id":"w850-10","group":"第2週｜10/31〜11/6：聞き取り＋文法","subject":"TOEIC","label":"Part 3を計12セット、本番速度・設問先読みで練習"},{"id":"w850-11","group":"第2週｜10/31〜11/6：聞き取り＋文法","subject":"TOEIC","label":"Part 5を計100問、弱点文法の理由を説明できるまで復習"},{"id":"w850-12","group":"第2週｜10/31〜11/6：聞き取り＋文法","subject":"TOEIC","label":"Part 6を5文書（20問）、論理関係と文挿入に集中"},{"id":"w850-13","group":"第2週｜10/31〜11/6：聞き取り＋文法","subject":"TOEIC","label":"Part 7シングルパッセージを計8文書、時間を測る"},{"id":"w850-14","group":"第2週｜10/31〜11/6：聞き取り＋文法","subject":"TOEIC","label":"単語を週5日以上復習し、間違い語彙の例文を確認"},{"id":"w850-15","group":"第2週｜10/31〜11/6：聞き取り＋文法","subject":"数学","label":"置換積分・部分積分の典型問題を解く"},{"id":"w850-16","group":"第2週｜10/31〜11/6：聞き取り＋文法","subject":"物理","label":"斜面・摩擦・張力の問題を解く"},{"id":"w850-17","group":"第3週｜11/7〜11/13：読解速度","subject":"TOEIC","label":"Part 4を計12セット、設問の先読みと数値・目的の聞き取り"},{"id":"w850-18","group":"第3週｜11/7〜11/13：読解速度","subject":"TOEIC","label":"Part 5を計80〜100問、計時して解く"},{"id":"w850-19","group":"第3週｜11/7〜11/13：読解速度","subject":"TOEIC","label":"Part 6を計5文書、接続詞・接続副詞・文挿入を再演習"},{"id":"w850-20","group":"第3週｜11/7〜11/13：読解速度","subject":"TOEIC","label":"Part 7のダブル・トリプルを各3セット以上、根拠を確認"},{"id":"w850-21","group":"第3週｜11/7〜11/13：読解速度","subject":"TOEIC","label":"Reading 75分の通し演習を1回行い、Part 5/6/7の所要時間を記録"},{"id":"w850-22","group":"第3週｜11/7〜11/13：読解速度","subject":"TOEIC","label":"誤答・時間切れの原因を3種類に分けて修正する"},{"id":"w850-23","group":"第3週｜11/7〜11/13：読解速度","subject":"数学","label":"行列の積・逆行列を演習"},{"id":"w850-24","group":"第3週｜11/7〜11/13：読解速度","subject":"物理","label":"クーロンの法則と電場を演習"},{"id":"w850-25","group":"第4週｜11/14〜11/20：中間測定","subject":"TOEIC","label":"2時間の本番形式模試②を実施する"},{"id":"w850-26","group":"第4週｜11/14〜11/20：中間測定","subject":"TOEIC","label":"模試②のL/R正答率・Part別誤答・時間不足を模試①と比較"},{"id":"w850-27","group":"第4週｜11/14〜11/20：中間測定","subject":"TOEIC","label":"模試②の聞き取れない音声は台本確認後に再聴・音読"},{"id":"w850-28","group":"第4週｜11/14〜11/20：中間測定","subject":"TOEIC","label":"Part 5の弱点問題を計80問＋Part 6を4文書復習"},{"id":"w850-29","group":"第4週｜11/14〜11/20：中間測定","subject":"TOEIC","label":"Part 7を計25問、誤答選択肢まで根拠を確認"},{"id":"w850-30","group":"第4週｜11/14〜11/20：中間測定","subject":"TOEIC","label":"語彙の復習を継続（新規語よりも誤答した単語を優先）"},{"id":"w850-31","group":"第4週｜11/14〜11/20：中間測定","subject":"数学","label":"行列式と連立一次方程式を演習"},{"id":"w850-32","group":"第4週｜11/14〜11/20：中間測定","subject":"物理","label":"ガウスの法則を演習"},{"id":"w850-33","group":"第5週｜11/21〜11/27：弱点の集中改善","subject":"TOEIC","label":"正答率が低いリスニングPartを15セット以上練習・復習"},{"id":"w850-34","group":"第5週｜11/21〜11/27：弱点の集中改善","subject":"TOEIC","label":"Part 5を計80〜100問、時間を測り解答根拠を確認"},{"id":"w850-35","group":"第5週｜11/21〜11/27：弱点の集中改善","subject":"TOEIC","label":"Part 6を6文書（24問）＋文脈判断を重点復習"},{"id":"w850-36","group":"第5週｜11/21〜11/27：弱点の集中改善","subject":"TOEIC","label":"Part 7の複数文書問題を計20問以上練習"},{"id":"w850-37","group":"第5週｜11/21〜11/27：弱点の集中改善","subject":"TOEIC","label":"Readingの通し演習1回：Part 5≒10分、Part 6≒10分、Part 7≒55分を試す"},{"id":"w850-38","group":"第5週｜11/21〜11/27：弱点の集中改善","subject":"TOEIC","label":"解き残しの設問数とその原因を記録し対策する"},{"id":"w850-39","group":"第5週｜11/21〜11/27：弱点の集中改善","subject":"数学","label":"固有値・固有ベクトルを確認"},{"id":"w850-40","group":"第5週｜11/21〜11/27：弱点の集中改善","subject":"物理","label":"電位・電位差を確認"},{"id":"w850-41","group":"第6週｜11/28〜12/4：本番調整","subject":"TOEIC","label":"2時間の本番形式模試③を実施し、所要時間と誤答数を記録"},{"id":"w850-42","group":"第6週｜11/28〜12/4：本番調整","subject":"TOEIC","label":"模試①〜③で頻出した自分のミスを上位3つに絞る"},{"id":"w850-43","group":"第6週｜11/28〜12/4：本番調整","subject":"TOEIC","label":"Part 6の接続詞／接続副詞・文挿入を再復習"},{"id":"w850-44","group":"第6週｜11/28〜12/4：本番調整","subject":"TOEIC","label":"Part 7の残り時間とマーク漏れがないかを確認"},{"id":"w850-45","group":"第6週｜11/28〜12/4：本番調整","subject":"TOEIC","label":"聞き取りで間違えた音声だけを繰り返し確認"},{"id":"w850-46","group":"第6週｜11/28〜12/4：本番調整","subject":"TOEIC","label":"この週は新教材を増やさず、できなかった問題を優先する"},{"id":"w850-47","group":"第6週｜11/28〜12/4：本番調整","subject":"数学","label":"微積分・線形代数の基礎だけ継続"},{"id":"w850-48","group":"第6週｜11/28〜12/4：本番調整","subject":"物理","label":"力学・電場の基礎だけ継続"},{"id":"w850-49","group":"直前｜12/5〜12/6：試験本番","subject":"TOEIC","label":"12/5：会場・身分証・筆記具・移動手段と受付時間を確認"},{"id":"w850-50","group":"直前｜12/5〜12/6：試験本番","subject":"TOEIC","label":"12/5：単語と苦手メモを20〜30分軽く確認し、睡眠を優先"},{"id":"w850-51","group":"直前｜12/5〜12/6：試験本番","subject":"TOEIC","label":"12/6：TOEIC本番。最後の1問までマークして提出"},{"id":"tw27","group":"12/7〜12/13｜試験後","label":"数学｜重積分・偏微分の基礎に着手","subject":"数学"},{"id":"tw28","group":"12/7〜12/13｜試験後","label":"数学｜行列の固有値・対角化を演習","subject":"数学"},{"id":"tw29","group":"12/7〜12/13｜試験後","label":"物理｜力学：仕事・エネルギー保存","subject":"物理"},{"id":"tw30","group":"12/7〜12/13｜試験後","label":"物理｜電磁気：コンデンサと誘電体","subject":"物理"},{"id":"tw31","group":"12/14〜12/20｜試験後","label":"数学｜微分方程式（変数分離・1階線形）","subject":"数学"},{"id":"tw32","group":"12/14〜12/20｜試験後","label":"数学｜重積分と座標変換","subject":"数学"},{"id":"tw33","group":"12/14〜12/20｜試験後","label":"物理｜力学：運動量・衝突","subject":"物理"},{"id":"tw34","group":"12/14〜12/20｜試験後","label":"物理｜磁場とローレンツ力","subject":"物理"},{"id":"tw35","group":"12/21〜12/27｜試験後","label":"数学｜固有値・対角化の標準問題","subject":"数学"},{"id":"tw36","group":"12/21〜12/27｜試験後","label":"数学｜2階線形微分方程式","subject":"数学"},{"id":"tw37","group":"12/21〜12/27｜試験後","label":"物理｜円運動・単振動","subject":"物理"},{"id":"tw38","group":"12/21〜12/27｜試験後","label":"物理｜ビオ・サバール・アンペール","subject":"物理"},{"id":"tw39","group":"12/28〜1/3｜試験後","label":"数学｜冬休みの復習と苦手整理","subject":"数学"},{"id":"tw40","group":"12/28〜1/3｜試験後","label":"数学｜神大の過去問を1題眺める・解法分析","subject":"数学"},{"id":"tw41","group":"12/28〜1/3｜試験後","label":"物理｜静電場・磁場の総復習","subject":"物理"},{"id":"tw42","group":"12/28〜1/3｜試験後","label":"物理｜運動方程式・エネルギー保存の復習","subject":"物理"}];
+const storageKey='kosen-transfer-study-2028-v1';
+const ids=new Set([...DATA,...WEEKS].map(x=>x.id));
+let complete={};let scores={};let filter='weeks';let priorityOnly=false;let search='';let collapsed=new Set();
+const $=id=>document.getElementById(id);
+function safeStore(){try{localStorage.setItem(storageKey,JSON.stringify({checks:complete,scores:scores,updated:new Date().toISOString()}));$('savedAt').textContent='最終保存：'+new Date().toLocaleString('ja-JP')}catch(e){$('savedAt').textContent='保存できません。ブラウザの設定を確認するかバックアップを利用してください。'}}
+function restore(){try{const item=JSON.parse(localStorage.getItem(storageKey)||'null');if(item&&item.checks){for(const [k,v] of Object.entries(item.checks)){if(ids.has(k)&&v===true)complete[k]=true;}if(item.scores && typeof item.scores==='object')scores=item.scores;if(item.updated)$('savedAt').textContent='最終保存：'+new Date(item.updated).toLocaleString('ja-JP')}}catch(e){$('savedAt').textContent='保存データを読み込めませんでした。'}}
+function showScores(syncInputs=false){for(let n=1;n<=3;n++){let total=0,ok=true;for(const x of ['L','R']){const id=`s${n}${x}`;const e=$(id);if(syncInputs)e.value=scores[id]??'';const v=Number(e.value);if(e.value===''||!Number.isFinite(v)||v<5||v>495)ok=false;else total+=v;}const t=$(`sum${n}`);t.textContent=ok?`計：${total}点${total>=850?'（目標到達）':''}`:'計：—';}}
+function progress(){const count=(a)=>a.reduce((sum,x)=>sum+(complete[x.id]?1:0),0);$('totalStat').textContent=`${count(DATA)} / ${DATA.length}`;$('totalBar').style.width=`${count(DATA)/DATA.length*100}%`;for(const [name,el] of [['数学','mstat'],['物理','pstat'],['電気回路','estat'],['TOEIC','tstat']]){let arr=DATA.filter(x=>x.subject===name);$(el).textContent=`${count(arr)} / ${arr.length}`}}
+function textEl(tag,cls,txt){const e=document.createElement(tag);if(cls)e.className=cls;e.textContent=txt;return e}
+function render(){progress();const container=$('sections');container.replaceChildren();const inWeeks=filter==='weeks';let list=inWeeks?WEEKS:DATA.filter(x=>(filter==='all'||x.subject===filter)&&(!priorityOnly||x.priority==='最優先'));
+if(search)list=list.filter(x=>(x.label+' '+x.group+' '+(x.subject||'')).toLocaleLowerCase().includes(search.toLocaleLowerCase()));
+const groups=new Map();for(const x of list){const key=(x.subject||'4週間')+'|'+x.group;if(!groups.has(key))groups.set(key,[]);groups.get(key).push(x)}
+if(!groups.size){container.append(textEl('p','empty','該当する単元がありません。'));return}
+for(const [key,entries] of groups){const group=entries[0];const card=textEl('section','section','');const btn=document.createElement('button');btn.setAttribute('type','button');btn.setAttribute('aria-expanded',String(!collapsed.has(key)));const left=textEl('div','meta','');left.append(textEl('span','section-title',(group.subject?group.subject+' · ':'')+group.group));if(group.priority)left.append(textEl('span','pill',group.priority));const right=textEl('div','meta','');const done=entries.filter(x=>complete[x.id]).length;right.append(textEl('span','count',`${done} / ${entries.length}`));const mini=textEl('div','minibar','');const fill=document.createElement('div');fill.style.width=`${done/entries.length*100}%`;mini.append(fill);right.append(mini);right.append(textEl('span','count',collapsed.has(key)?'＋':'－'));btn.append(left,right);btn.addEventListener('click',()=>{collapsed.has(key)?collapsed.delete(key):collapsed.add(key);render()});card.append(btn);
+const inner=textEl('div','items','');if(collapsed.has(key))inner.classList.add('hidden');for(const x of entries){const label=textEl('label','item','');const input=document.createElement('input');input.type='checkbox';input.checked=!!complete[x.id];input.setAttribute('aria-label',x.label);if(input.checked)label.classList.add('done');input.addEventListener('change',()=>{if(input.checked)complete[x.id]=true;else delete complete[x.id];safeStore();render()});label.append(input,textEl('span','',x.label));inner.append(label)}card.append(inner);container.append(card)}}
+function toast(s){$('toast').textContent=s;$('toast').style.display='block';clearTimeout(window.toastHandle);window.toastHandle=setTimeout(()=>$('toast').style.display='none',2500)}
+$('priorityBtn').disabled=true;
+$('tabBtns').addEventListener('click',e=>{const b=e.target.closest('[data-tab]');if(!b)return;filter=b.dataset.tab;document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x===b));if(filter==='weeks'){$('priorityBtn').disabled=true}else{$('priorityBtn').disabled=false}render()});
+$('search').addEventListener('input',e=>{search=e.target.value.trim();render()});
+$('priorityBtn').addEventListener('click',()=>{priorityOnly=!priorityOnly;$('priorityBtn').classList.toggle('active',priorityOnly);render()});
+let openAll=false;$('openBtn').addEventListener('click',()=>{openAll=!openAll;collapsed=new Set();if(!openAll){for(const x of [...DATA,...WEEKS])collapsed.add((x.subject||'4週間')+'|'+x.group)}$('openBtn').textContent=openAll?'すべて閉じる':'すべて開く';render()});
+$('exportBtn').addEventListener('click',()=>{const blob=new Blob([JSON.stringify({format:'kosen-2028-checklist',version:3,updated:new Date().toISOString(),checks:complete,scores:scores,vocabulary:vocabCards},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='編入学習チェックリスト_進捗バックアップ.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('バックアップを保存しました')});
+$('importBtn').addEventListener('click',()=>$('importFile').click());$('importFile').addEventListener('change',async e=>{const f=e.target.files?.[0];if(!f)return;try{const obj=JSON.parse(await f.text());if(obj.format!=='kosen-2028-checklist'||typeof obj.checks!=='object'||obj.checks===null)throw new Error('形式が違います');if(!confirm('現在のチェック・模試記録と、バックアップに含まれる場合は単語帳も復元します。よろしいですか？'))return;complete={};scores=obj.scores&&typeof obj.scores==='object'?obj.scores:{};for(const [k,v] of Object.entries(obj.checks))if(ids.has(k)&&v===true)complete[k]=true;if(Array.isArray(obj.vocabulary)){vocabCards=normalizeCards(obj.vocabulary);saveVocab();renderVocabListAndCard()}safeStore();render();showScores(true);toast('進捗を復元しました')}catch(err){alert('バックアップを読み込めません：'+err.message)}finally{e.target.value=''}});
+$('resetBtn').addEventListener('click',()=>{if(confirm('すべてのチェックを初期化しますか？\nこの操作は取り消せません。')){complete={};scores={};safeStore();render();showScores(true);toast('チェックを初期化しました')}});
+for(let n=1;n<=3;n++)for(const x of ['L','R']){$(`s${n}${x}`).addEventListener('input',e=>{const raw=e.target.value;if(raw==='')delete scores[e.target.id];else if(Number(raw)>=5&&Number(raw)<=495)scores[e.target.id]=Number(raw);safeStore();showScores();});}
+restore();render();showScores(true);
+
+// ===== Vocabulary flashcards: separate key to preserve earlier progress =====
+const VOCAB_KEY='kosen-toeic-vocabulary-2028-v1';
+const BUILTIN_VOCAB={"allocate":"割り当てる","annual":"年1回の、年間の","applicant":"応募者","approve":"承認する","approximately":"およそ","arrange":"手配する","assess":"評価する","asset":"資産","attend":"出席する","available":"利用できる","benefit":"利益、福利厚生","budget":"予算","candidate":"候補者","capacity":"収容力、能力","clarify":"明確にする","client":"顧客","collaborate":"協力する","colleague":"同僚","commute":"通勤する","compliance":"法令遵守","complimentary":"無料の","comprehensive":"包括的な","confirm":"確認する","consecutive":"連続した","considerable":"かなりの","consistently":"一貫して","consult":"相談する","contract":"契約","contribute":"貢献する","convenient":"便利な","cooperate":"協力する","corporate":"企業の","deadline":"締め切り","defective":"欠陥のある","demonstrate":"実演する、示す","department":"部署","deposit":"預金、保証金","designate":"指定する","despite":"〜にもかかわらず","destination":"目的地","distribute":"配布する","diverse":"多様な","durable":"耐久性のある","eligible":"資格がある","emphasize":"強調する","employee":"従業員","ensure":"確実にする","entire":"全体の","equipment":"設備、機器","estimate":"見積もる、見積もり","evaluate":"評価する","exceed":"超える","exclusive":"限定の、独占的な","expand":"拡大する","expense":"費用","expire":"期限が切れる","facility":"施設","feedback":"意見、反応","flexible":"柔軟な","frequently":"頻繁に","fulfill":"満たす、果たす","furthermore":"さらに","guarantee":"保証する","implement":"実施する","improve":"改善する","incentive":"報奨金、動機","increase":"増加する","indicate":"示す","industry":"産業","inquiry":"問い合わせ","inspect":"点検する","install":"設置する","instead":"代わりに","inventory":"在庫","invoice":"請求書","launch":"開始する、発売する","maintenance":"保守、整備","mandatory":"義務的な","manufacturer":"製造業者","merchandise":"商品","negotiate":"交渉する","notify":"知らせる","obtain":"手に入れる","occupy":"占める","ongoing":"進行中の","opportunity":"機会","outstanding":"未払いの、優れた","overdue":"期限を過ぎた","participate":"参加する","particularly":"特に","policy":"方針、規定","postpone":"延期する","potential":"可能性のある","preliminary":"予備的な","preserve":"保存する","previously":"以前に","priority":"優先事項","procedure":"手順","proceed":"進む、続行する","procurement":"調達","productive":"生産的な","profit":"利益","prohibit":"禁止する","promptly":"速やかに","proposal":"提案","purchase":"購入する","qualified":"資格のある","quotation":"見積もり","recruit":"採用する","refund":"払い戻し","regarding":"〜に関して","regardless":"〜にかかわらず","reimburse":"払い戻す","relocate":"移転する","reliable":"信頼できる","requirement":"要件","reservation":"予約","reschedule":"予定を変更する","responsible":"責任がある","revenue":"収益","revise":"修正する","shipment":"出荷","significant":"重要な、かなりの","specify":"指定する","submit":"提出する","sufficient":"十分な","supervisor":"上司、監督者","supplier":"供給業者","survey":"調査","temporary":"一時的な","therefore":"したがって","thorough":"徹底した","transaction":"取引","transfer":"移す、移動する","undergo":"経験する、受ける","update":"更新する","upgrade":"改善する、改良する","urgent":"緊急の","vacancy":"空き、欠員","valid":"有効な","vendor":"販売業者","venue":"会場","verify":"確認する","warranty":"保証","withdraw":"引き出す、撤回する","whereas":"一方で","workforce":"労働力","workshop":"研修会","accommodate":"対応する、収容する","accordingly":"それに応じて","acknowledge":"認める、受領を知らせる","additional":"追加の","adjacent":"隣接する","affordable":"手頃な価格の","anticipate":"予想する","appreciate":"感謝する","authorize":"許可する","behalf":"代理、代表","comply":"従う","conclude":"結論を出す、終える","conduct":"実施する","confer":"相談する、授与する","confidential":"機密の","consolidate":"統合する","convenience":"便利さ","correspond":"一致する、連絡を取る","credential":"資格、証明書","deduct":"差し引く","delay":"遅延、遅らせる","demand":"需要、要求","dispatch":"発送する","enclose":"同封する","enroll":"登録する","establish":"設立する","exhibit":"展示する","extend":"延長する","feasible":"実行可能な","indispensable":"不可欠な","innovative":"革新的な","intend":"意図する","interfere":"妨げる","itinerary":"旅行日程","municipal":"市の、自治体の","nevertheless":"それにもかかわらず","occasionally":"時折","outlet":"店舗、販売店","oversee":"監督する","pending":"保留中の","permanent":"永続的な","personnel":"人員、人事","preference":"好み、優先事項","proximity":"近さ","recipient":"受取人","renovation":"改装","representative":"代表者、代理人","retain":"保持する","satisfactory":"満足できる","subsequently":"その後","substantial":"かなりの","suspend":"一時停止する","tentative":"仮の","unanimous":"全会一致の","utilize":"利用する","versatile":"多用途の","viable":"実行可能な","waive":"免除する","warehouse":"倉庫"};
+const intervals=[1,3,7,14,30];
+let vocabCards=[];
+let vocabScope='due', vocabFlipped=false, vocabIndex=0, vocabShuffle=false, vocabPracticeIds=[];
+const dayMS=86400000;
+const localNow=()=>Date.now();
+function vId(){return 'v'+Date.now().toString(36)+Math.random().toString(36).slice(2,9)}
+function normWord(s){return String(s||'').trim().replace(/\s+/g,' ')}
+function normalizeCards(raw){
+  if(!Array.isArray(raw))return [];
+  const seen=new Set();return raw.slice(0,5000).map(v=>({
+    id:typeof v.id==='string'&&v.id.length<100?v.id:vId(),
+    en:normWord(v.en).slice(0,120), ja:normWord(v.ja).slice(0,180),
+    box:Number.isInteger(v.box)?Math.max(0,Math.min(5,v.box)):0,
+    due:Number.isFinite(Number(v.due))?Number(v.due):0,
+    missed:Math.max(0,Number(v.missed)||0),
+    created:Number(v.created)||Date.now()
+  })).filter(v=>v.en&&v.ja&&!seen.has(v.en.toLowerCase())&&seen.add(v.en.toLowerCase()));
+}
+function saveVocab(){
+  try{localStorage.setItem(VOCAB_KEY,JSON.stringify(vocabCards));return true}
+  catch(e){vocabNotice('単語帳を保存できませんでした。JSONバックアップを保存してください。',true);return false}
+}
+function loadVocab(){try{vocabCards=normalizeCards(JSON.parse(localStorage.getItem(VOCAB_KEY)||'[]'));}catch(e){vocabCards=[];vocabNotice('単語帳の読み込みに失敗しました。バックアップから復元できます。',true)}}
+function vocabNotice(msg,error=false){$('vocabStatus').textContent=msg;$('vocabStatus').classList.toggle('error',error)}
+function dueCards(){return vocabCards.filter(v=>v.due<=Date.now())}
+function currentPractice(){
+ const today=Date.now();let cards=vocabCards.filter(v=>vocabScope==='all'||(vocabScope==='due'?v.due<=today:v.missed>0));
+ if(vocabScope==='due')cards.sort((a,b)=>a.due-b.due||a.created-b.created);
+ else cards.sort((a,b)=>a.created-b.created);
+ if(vocabShuffle)cards=cards.sort((a,b)=>{return (shuffleRanks.get(a.id)??0)-(shuffleRanks.get(b.id)??0)});
+ return cards;
+}
+let shuffleRanks=new Map();
+function updateVocabStats(){
+ $('vocabCount').textContent=vocabCards.length+'語登録';$('vocabTotalWords').textContent=vocabCards.length+'語';
+ $('reviewStats').textContent=`今日の復習 ${dueCards().length}語 ・ 復習済み ${vocabCards.filter(v=>v.box>0).length}語`;
+}
+function renderFlashcard(preferredId=null){
+ updateVocabStats();
+ const cards=currentPractice();
+ if(preferredId){const pos=cards.findIndex(v=>v.id===preferredId);if(pos>=0)vocabIndex=pos}
+ if(vocabIndex>=cards.length)vocabIndex=Math.max(0,cards.length-1);
+ if(vocabIndex<0)vocabIndex=0;
+ const cur=cards[vocabIndex];
+ const shown=Boolean(cur);
+ $('flashcard').disabled=!shown;
+ $('vocabPrev').disabled=!shown||cards.length<2;
+ $('vocabNext').disabled=!shown||cards.length<2;
+ $('vocabAgain').disabled=!shown;
+ $('vocabKnow').disabled=!shown;
+ $('vocabSpeak').disabled=!shown||!('speechSynthesis' in window);
+ $('vocabShuffle').disabled=!shown||cards.length<2;
+ $('flashcard').classList.toggle('flipped',shown&&vocabFlipped);
+ $('flashcardSide').textContent=shown?(vocabFlipped?'JAPANESE · タップで戻す':'ENGLISH · タップで裏返す'):'VOCABULARY';
+ $('flashcardText').textContent=shown?(vocabFlipped?cur.ja:cur.en):(vocabScope==='due'&&vocabCards.length?'今日の復習は完了しました！':'ここに登録した単語カードが表示されます');
+ $('flashcardHint').textContent=shown?(vocabFlipped?cur.en:'タップして日本語訳を見る'):(vocabCards.length?'「全カード」でいつでも練習できます':'英単語を上の欄から追加してください');
+ $('vocabPosition').textContent=shown?`${vocabIndex+1} / ${cards.length}`:'0 / 0';
+}
+function renderVocabList(){
+ updateVocabStats();const list=$('vocabList');list.replaceChildren();
+ const query=$('vocabSearch').value.trim().toLowerCase();
+ const entries=vocabCards.filter(v=>(v.en+' '+v.ja).toLowerCase().includes(query));
+ if(!entries.length){const e=document.createElement('div');e.className='vocab-empty';e.textContent=vocabCards.length?'該当する単語はありません。':'まだ単語がありません。最初の1語を登録してみましょう。';list.append(e);return}
+ for(const v of entries.slice().reverse()){
+  const row=document.createElement('div');row.className='vocab-word';
+  const main=document.createElement('div');main.className='vocab-word-main';
+  const en=document.createElement('div');en.className='vocab-word-english';en.textContent=v.en;
+  const ja=document.createElement('div');ja.className='vocab-word-jp';ja.textContent=v.ja;
+  const meta=document.createElement('div');meta.className='vocab-word-sub';meta.textContent=v.box>0?`復習レベル ${v.box}/5 · 苦手 ${v.missed}回`:'未習得';
+  main.append(en,ja,meta);
+  const edit=document.createElement('button');edit.type='button';edit.textContent='編集';edit.title='意味を修正';edit.addEventListener('click',()=>{
+   const newEn=prompt('英単語を編集します',v.en);if(newEn===null)return;
+   const e=normWord(newEn);if(!e||e.length>120){alert('英単語を120文字以内で入力してください');return}
+   if(vocabCards.some(x=>x.id!==v.id&&x.en.toLowerCase()===e.toLowerCase())){alert('その英単語は既に登録済みです');return}
+   const newJp=prompt('日本語訳を編集します',v.ja);if(newJp===null)return;
+   const j=normWord(newJp);if(!j||j.length>180){alert('日本語訳を180文字以内で入力してください');return}
+   v.en=e;v.ja=j;saveVocab();renderVocabList();renderFlashcard(v.id);
+  });
+  const del=document.createElement('button');del.type='button';del.textContent='削除';del.title='単語を削除';del.addEventListener('click',()=>{
+   if(!confirm('「'+v.en+'」を単語帳から削除しますか？'))return;
+   vocabCards=vocabCards.filter(x=>x.id!==v.id);saveVocab();vocabFlipped=false;renderVocabList();renderFlashcard();
+  });
+  row.append(main,edit,del);list.append(row);
+ }
+}
+function renderVocabListAndCard(id=null){renderVocabList();renderFlashcard(id)}
+// EJDict-hand / CC0 public-domain English-Japanese dictionary
+// https://github.com/kujirahand/EJDict
+// Fetch the alphabetic shard only on demand; cache it in IndexedDB when available.
+const EJDICT_SOURCES=[
+ letter=>`https://cdn.jsdelivr.net/gh/kujirahand/EJDict@master/src/${letter}.txt`,
+ letter=>`https://raw.githubusercontent.com/kujirahand/EJDict/master/src/${letter}.txt`
+];
+const shardMemory=new Map();
+let dictionaryDBPromise=null;
+function openEJDictCache(){
+ if(dictionaryDBPromise)return dictionaryDBPromise;
+ dictionaryDBPromise=new Promise(resolve=>{
+  if(!('indexedDB' in window)){resolve(null);return}
+  try{
+   const req=indexedDB.open('kosen-toeic-ejdict-v1',1);
+   req.onupgradeneeded=()=>{if(!req.result.objectStoreNames.contains('shards'))req.result.createObjectStore('shards')};
+   req.onsuccess=()=>resolve(req.result);
+   req.onerror=()=>resolve(null);
+   req.onblocked=()=>resolve(null);
+  }catch(e){resolve(null)}
+ });
+ return dictionaryDBPromise;
+}
+async function cacheGet(letter){
+ const db=await openEJDictCache();if(!db)return null;
+ return new Promise(resolve=>{
+  try{const tx=db.transaction('shards','readonly');const r=tx.objectStore('shards').get(letter);r.onsuccess=()=>resolve(typeof r.result==='string'?r.result:null);r.onerror=()=>resolve(null)}catch(e){resolve(null)}
+ });
+}
+async function cachePut(letter,text){
+ const db=await openEJDictCache();if(!db)return;
+ try{db.transaction('shards','readwrite').objectStore('shards').put(text,letter)}catch(e){}
+}
+function parseEJDict(text){
+ const map=new Map();
+ for(const line of text.split(/\r?\n/)){
+  const tab=line.indexOf('\t');if(tab<=0)continue;
+  const keys=line.slice(0,tab).split(/,(?=[^ ]|$)/);
+  const value=line.slice(tab+1).trim();if(!value)continue;
+  for(const key of keys){const k=key.trim().toLowerCase();if(k&&!map.has(k))map.set(k,value)}
+ }
+ return map;
+}
+async function fetchTextTimeout(url,ms=8500){
+ const ctrl=new AbortController();const t=setTimeout(()=>ctrl.abort(),ms);
+ try{
+  const response=await fetch(url,{signal:ctrl.signal,method:'GET'});
+  if(!response.ok)throw new Error('HTTP '+response.status);
+  const body=await response.text();
+  if(body.length<1000||!body.includes('\t'))throw new Error('辞書データの形式が不正です');
+  return body;
+ }finally{clearTimeout(t)}
+}
+async function fetchEJDictShard(letter){
+ if(shardMemory.has(letter))return shardMemory.get(letter);
+ const work=(async()=>{
+  const local=await cacheGet(letter);
+  if(local){const dictionary=parseEJDict(local);if(dictionary.size>20)return dictionary}
+  let lastError=null;
+  for(const source of EJDICT_SOURCES){
+   try{
+    const contents=await fetchTextTimeout(source(letter));const dictionary=parseEJDict(contents);
+    if(dictionary.size<20)throw new Error('辞書データを読み取れませんでした');
+    cachePut(letter,contents);return dictionary;
+   }catch(e){lastError=e}
+  }
+  throw lastError||new Error('辞書を取得できませんでした');
+ })();
+ shardMemory.set(letter,work);
+ try{return await work}catch(e){shardMemory.delete(letter);throw e}
+}
+function englishVariants(english){
+ const x=english.toLowerCase();const result=[x];
+ if(x.endsWith('ies')&&x.length>4)result.push(x.slice(0,-3)+'y');
+ if(x.endsWith('ied')&&x.length>4)result.push(x.slice(0,-3)+'y');
+ if(x.endsWith('ing')&&x.length>5){result.push(x.slice(0,-3));result.push(x.slice(0,-3)+'e')}
+ if(x.endsWith('ed')&&x.length>4){result.push(x.slice(0,-2));result.push(x.slice(0,-1))}
+ if(x.endsWith('es')&&x.length>4)result.push(x.slice(0,-2));
+ if(x.endsWith('s')&&x.length>3)result.push(x.slice(0,-1));
+ return [...new Set(result)];
+}
+async function lookupEJDict(en){
+ const letter=en[0]?.toLowerCase();if(!/^[a-z]$/.test(letter))return null;
+ const dictionary=await fetchEJDictShard(letter);
+ for(const candidate of englishVariants(en)){
+  const meaning=dictionary.get(candidate);
+  if(meaning){
+   const neat=meaning.replace(/《[^》]*》/g,'').replace(/[『』]/g,'').replace(/\s+/g,' ').trim();
+   return {text:(neat||meaning).slice(0,180),source:candidate===en.toLowerCase()?'英和辞書（EJDict）':'英和辞書（原形 '+candidate+'）'};
+  }
+ }
+ return null;
+}
+async function lookupMyMemory(en){
+ const ctrl=new AbortController();const t=setTimeout(()=>ctrl.abort(),6500);
+ try{
+  const params=new URLSearchParams({q:en,langpair:'en|ja'});
+  const response=await fetch('https://api.mymemory.translated.net/get?'+params.toString(),{signal:ctrl.signal,method:'GET'});
+  if(!response.ok)throw new Error('外部翻訳HTTP '+response.status);
+  const data=await response.json();
+  if(data.responseStatus&&Number(data.responseStatus)!==200)throw new Error('外部翻訳の利用制限');
+  const jp=normWord(data.responseData?.translatedText||'');
+  if(!jp||jp.toLowerCase()===en.toLowerCase()||/^(MYMEMORY WARNING|QUOTA|INVALID LANGUAGE)/i.test(jp))throw new Error('日本語訳を取得できませんでした');
+  return {text:jp.slice(0,180),source:'外部翻訳（要確認）'};
+ }finally{clearTimeout(t)}
+}
+async function autoTranslate(en){
+ const exact=BUILTIN_VOCAB[en.toLowerCase()];if(exact)return {text:exact,source:'TOEIC内蔵辞書'};
+ // The first lookup of a new initial may need to download an alphabetic shard.
+ let dictError=null;
+ try{
+  const dictionaryResult=await lookupEJDict(en);
+  if(dictionaryResult)return dictionaryResult;
+ }catch(e){dictError=e}
+ if(!navigator.onLine)throw new Error('この単語の辞書データが未取得です。オンラインで一度検索するか、訳を直接入力してください。');
+ try{return await lookupMyMemory(en)}
+ catch(e){throw new Error('辞書'+(dictError?'の取得':'に該当語')+'がなく、外部翻訳も失敗しました。再検索か「Google翻訳で意味を確認」をお試しください。')}
+}
+function syncExternalTranslation(){
+ const term=normWord($('vocabEnglish').value);
+ $('externalTranslation').href='https://translate.google.com/?sl=en&tl=ja&text='+encodeURIComponent(term)+'&op=translate';
+}
+// Vocabulary draft is NEVER stored until the user presses the separate confirm button.
+let vocabLookupSeq=0, vocabLookupTimer=null, vocabTranslating=false, vocabMeaningSource='';
+function draftValues(){return {english:normWord($('vocabEnglish').value), japanese:normWord($('vocabJapanese').value)}}
+function duplicateVocab(en){return Boolean(en&&vocabCards.some(v=>v.en.toLowerCase()===en.toLowerCase()))}
+function updateDraft(){
+ const {english,japanese}=draftValues();
+ $('vocabDraftEn').textContent=english||'英単語を入力してください';
+ $('vocabDraftJa').textContent=japanese||'日本語訳を確認してから追加できます';
+ $('vocabAddBtn').disabled=!(english&&japanese&&!vocabTranslating&&!duplicateVocab(english));
+ $('vocabLookupBtn').disabled=!!vocabTranslating;
+ $('vocabLookupBtn').textContent=vocabTranslating?'翻訳中…':'↻ 意味を検索';
+}
+async function lookupDraft(){
+ clearTimeout(vocabLookupTimer);
+ const english=normWord($('vocabEnglish').value);
+ if(!english){vocabNotice('最初に英単語を入力してください。',true);return}
+ if(duplicateVocab(english)){vocabNotice('「'+english+'」は登録済みです。下の一覧から編集できます。',true);updateDraft();return}
+ const requestNo=++vocabLookupSeq;
+ syncExternalTranslation();
+ vocabTranslating=true;updateDraft();vocabNotice('「'+english+'」の日本語訳を取得しています…');
+ try{
+  const result=await autoTranslate(english);
+  if(requestNo!==vocabLookupSeq||normWord($('vocabEnglish').value)!==english)return;
+  $('vocabJapanese').value=result.text;vocabMeaningSource=result.source;
+  vocabNotice('【'+result.source+'】訳を確認してください。必要なら修正し「この内容で単語帳に追加」を押してください。');
+ }catch(err){
+  if(requestNo!==vocabLookupSeq)return;
+  vocabMeaningSource='手入力';
+  vocabNotice('自動翻訳ができませんでした（'+(err.name==='AbortError'?'時間切れ':err.message)+'）。日本語訳を入力すれば登録できます。',true);
+ }finally{
+  if(requestNo===vocabLookupSeq){vocabTranslating=false;updateDraft()}
+ }
+}
+$('vocabEnglish').addEventListener('input',()=>{
+ ++vocabLookupSeq;clearTimeout(vocabLookupTimer);vocabTranslating=false;vocabMeaningSource='';
+ $('vocabJapanese').value='';
+ const english=normWord($('vocabEnglish').value);syncExternalTranslation();updateDraft();
+ if(!english){vocabNotice('英単語を入力すると自動的に日本語訳が表示されます。');return}
+ if(duplicateVocab(english)){vocabNotice('「'+english+'」は登録済みです。下の一覧から編集できます。',true);return}
+ // Built-in dictionary does not require a network request or typing delay.
+ if(Object.prototype.hasOwnProperty.call(BUILTIN_VOCAB,english.toLowerCase())){
+  $('vocabJapanese').value=BUILTIN_VOCAB[english.toLowerCase()];vocabMeaningSource='内蔵辞書';
+  updateDraft();vocabNotice('訳を確認・修正してから、追加ボタンを押してください。');
+  return;
+ }
+ vocabNotice('入力が止まると英和辞書を検索します。初回のみ数秒かかる場合があります。');
+ vocabLookupTimer=setTimeout(()=>lookupDraft(),850);
+});
+$('vocabJapanese').addEventListener('input',()=>{
+ // A manual correction wins over an unfinished translation request.
+ ++vocabLookupSeq;clearTimeout(vocabLookupTimer);vocabTranslating=false;vocabMeaningSource='手入力・編集';
+ updateDraft();
+ if(normWord($('vocabJapanese').value))vocabNotice('意味を確認したら「この内容で単語帳に追加」を押してください。');
+});
+$('vocabForm').addEventListener('submit',e=>{e.preventDefault();lookupDraft()});
+$('vocabAddBtn').addEventListener('click',()=>{
+ const {english,japanese}=draftValues();
+ if(vocabTranslating||!english||!japanese){vocabNotice('英単語と日本語訳の両方を確認してから登録してください。',true);updateDraft();return}
+ if(duplicateVocab(english)){vocabNotice('「'+english+'」は登録済みです。',true);updateDraft();return}
+ const item={id:vId(),en:english,ja:japanese,box:0,due:0,missed:0,created:Date.now()};
+ vocabCards.push(item);
+ if(!saveVocab()){vocabCards.pop();renderVocabListAndCard();return}
+ ++vocabLookupSeq;clearTimeout(vocabLookupTimer);vocabTranslating=false;
+ $('vocabEnglish').value='';$('vocabJapanese').value='';vocabFlipped=false;
+ renderVocabListAndCard(item.id);updateDraft();
+ vocabNotice(`「${english} → ${japanese}」を単語帳に追加しました（${vocabMeaningSource||'確認済み'}）。`);
+ vocabMeaningSource='';$('vocabEnglish').focus();
+});
+updateDraft();syncExternalTranslation();
+$('vocabSearch').addEventListener('input',renderVocabList);
+$('flashcard').addEventListener('click',()=>{vocabFlipped=!vocabFlipped;renderFlashcard()});
+$('vocabPrev').addEventListener('click',()=>{const n=currentPractice().length;if(n){vocabIndex=(vocabIndex-1+n)%n;vocabFlipped=false;renderFlashcard()}});
+$('vocabNext').addEventListener('click',()=>{const n=currentPractice().length;if(n){vocabIndex=(vocabIndex+1)%n;vocabFlipped=false;renderFlashcard()}});
+function rateCurrent(known){const all=currentPractice();const v=all[vocabIndex];if(!v)return;
+ if(known){v.box=Math.min(v.box+1,5);const days=intervals[v.box-1];v.due=Date.now()+days*dayMS;}
+ else{v.missed++;v.box=0;v.due=Date.now()+10*60000;}
+ const prev=vocabIndex;saveVocab();vocabFlipped=false;vocabIndex=(vocabScope==='all'&&all.length>1)?(prev+1)%all.length:prev;
+ renderVocabListAndCard();
+ vocabNotice(known?`「${v.en}」を覚えたとして記録。次回は約${intervals[v.box-1]}日後です。`:`「${v.en}」を約10分後の復習に回しました。`);
+}
+$('vocabKnow').addEventListener('click',()=>rateCurrent(true));
+$('vocabAgain').addEventListener('click',()=>rateCurrent(false));
+document.querySelectorAll('[data-review]').forEach(btn=>btn.addEventListener('click',()=>{
+ vocabScope=btn.dataset.review;vocabIndex=0;vocabFlipped=false;
+ document.querySelectorAll('[data-review]').forEach(x=>x.classList.toggle('selected',x===btn));renderFlashcard();
+}));
+$('vocabShuffle').addEventListener('click',()=>{vocabShuffle=true;shuffleRanks=new Map(vocabCards.map(v=>[v.id,Math.random()]));vocabIndex=0;vocabFlipped=false;renderFlashcard();vocabNotice('カードの順番をシャッフルしました。')});
+$('vocabSpeak').addEventListener('click',()=>{
+ const v=currentPractice()[vocabIndex];if(!v||!('speechSynthesis' in window))return;
+ speechSynthesis.cancel();const speech=new SpeechSynthesisUtterance(v.en);speech.lang='en-US';speech.rate=.88;speechSynthesis.speak(speech);
+});
+function downloadVocab(content,name,type){const blob=new Blob([content],{type});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1500)}
+$('vocabCsv').addEventListener('click',()=>{
+ if(!vocabCards.length){vocabNotice('保存する単語がありません。',true);return}
+ const csv=vocabCards.map(v=>[v.en,v.ja].map(x=>'"'+x.replace(/"/g,'""')+'"').join(',')).join('\r\n');
+ downloadVocab('\ufeff'+csv,'TOEIC単語帳_フラッシュカード.csv','text/csv;charset=utf-8');vocabNotice('単語帳をCSVで保存しました。');
+});
+$('vocabExport').addEventListener('click',()=>{
+ downloadVocab(JSON.stringify({format:'kosen-toeic-vocab',version:1,updated:new Date().toISOString(),vocabulary:vocabCards},null,2),'TOEIC単語帳_バックアップ.json','application/json');vocabNotice('単語帳のバックアップを保存しました。');
+});
+$('vocabImportBtn').addEventListener('click',()=>$('vocabImportFile').click());
+$('vocabImportFile').addEventListener('change',async e=>{
+ const f=e.target.files?.[0];if(!f)return;
+ try{const data=JSON.parse(await f.text());const arr=data.vocabulary||data.cards;
+ if(!Array.isArray(arr))throw new Error('単語データがありません');const valid=normalizeCards(arr);
+ if(!confirm(`バックアップから${valid.length}語を読み込み、現在の単語帳と統合しますか？（同じ英単語は重複登録しません）`))return;
+ const before=vocabCards.length;const existing=new Set(vocabCards.map(v=>v.en.toLowerCase()));
+ for(const v of valid)if(!existing.has(v.en.toLowerCase())){vocabCards.push(v);existing.add(v.en.toLowerCase())}
+ saveVocab();vocabFlipped=false;renderVocabListAndCard();vocabNotice(`${vocabCards.length-before}語を読み込みました。`);
+ }catch(err){vocabNotice('読み込み失敗：'+err.message,true)}finally{e.target.value=''}
+});
+loadVocab();renderVocabListAndCard();
+
+</script></body></html>

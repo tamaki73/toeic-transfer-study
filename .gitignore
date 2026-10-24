@@ -1,0 +1,16 @@
+# Local configuration and private user data must never be published.
+.env
+.env.*
+!.env.example
+.local/
+private-data/
+exports/
+*バックアップ*.json
+*保存領域救出*.json
+*.backup.json
+node_modules/
+__pycache__/
+playwright-report/
+test-results/
+*.log
+.DS_Store
